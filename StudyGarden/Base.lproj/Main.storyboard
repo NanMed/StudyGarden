@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bb4-6c-Umd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16092.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bb4-6c-Umd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16082.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -355,17 +355,274 @@
                         </barButtonItem>
                     </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1ob-5b-KpI">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="498-oR-DaJ" kind="relationship" relationship="viewControllers" id="XrE-zL-EWQ"/>
                         <segue destination="xp6-GR-iTi" kind="relationship" relationship="viewControllers" id="ZE2-Lk-0X6"/>
+                        <segue destination="mSn-qK-AaE" kind="relationship" relationship="viewControllers" id="6Va-kU-Ps2"/>
+                        <segue destination="wYk-LA-AaM" kind="relationship" relationship="viewControllers" id="dfO-Oq-b3E"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIM-u5-gCR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3986.9565217391309" y="362.94642857142856"/>
+        </scene>
+        <!--Mapa-->
+        <scene sceneID="5Fh-qq-1wY">
+            <objects>
+                <viewController id="mSn-qK-AaE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ovV-QS-GZz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mapa-Pantalla 1" translatesAutoresizingMaskIntoConstraints="NO" id="QaO-qW-9sA">
+                                <rect key="frame" x="20" y="53" width="374" height="760"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="k1x-ij-sQ0"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mapa" id="fUS-U7-H1n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JBx-P1-m4u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3037.68115942029" y="-342.1875"/>
+        </scene>
+        <!--Estudio Rápido-->
+        <scene sceneID="jLA-p2-H9h">
+            <objects>
+                <viewController id="wYk-LA-AaM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ibk-Kn-Evu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estudio Rápido-Pantalla 1" translatesAutoresizingMaskIntoConstraints="NO" id="sOX-Xw-8wf">
+                                <rect key="frame" x="20" y="88" width="394" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0R-y3-QOM">
+                                <rect key="frame" x="334" y="112" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="TMW-Zv-V58" kind="show" id="Tug-5N-gvU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="9t2-8y-v5d"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Estudio Rápido" id="xAf-yh-Rko"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jWc-W9-Bvr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3986.9565217391309" y="-342.1875"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="T2Y-qw-90E">
+            <objects>
+                <viewController id="TMW-Zv-V58" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EKz-tQ-3vC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estudio Rápido-Pantalla 2" translatesAutoresizingMaskIntoConstraints="NO" id="P3K-qN-F68">
+                                <rect key="frame" x="-70" y="95" width="582" height="711"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3YR-Wh-ZN2">
+                                <rect key="frame" x="325" y="110" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="7dk-dZ-PEF" kind="show" id="F4t-FJ-9MU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="TEs-Vr-IuY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gj4-6d-Qfv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a5v-rP-0O5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4751" y="-327"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="X6y-n7-MBs">
+            <objects>
+                <viewController id="VFg-QT-J6f" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JY7-1i-fcR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estudio Rápido- pantalla 3" translatesAutoresizingMaskIntoConstraints="NO" id="3GS-mT-HnL">
+                                <rect key="frame" x="20" y="102" width="394" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PU1-68-awp">
+                                <rect key="frame" x="336" y="102" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="aZE-Ev-VqV" kind="show" id="RSM-m3-gfr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="uUK-IU-skf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="mIt-wQ-bfB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HMv-h5-gZ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6959" y="-304"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="0dy-bA-Gzb">
+            <objects>
+                <viewController id="aZE-Ev-VqV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dyD-ci-QBD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estudio Rápido-Pantalla 4" translatesAutoresizingMaskIntoConstraints="NO" id="2Ke-Wd-pCJ">
+                                <rect key="frame" x="-46" y="100" width="530" height="749"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VjF-B8-7Vm">
+                                <rect key="frame" x="343" y="100" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="3C3-79-sv5" kind="show" id="o5H-yf-bwe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="vMc-TQ-DYU"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5qV-8R-Zpw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fKa-zX-Of8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7761" y="-313"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Rol-DA-BLr">
+            <objects>
+                <viewController id="7dk-dZ-PEF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0iy-Rz-a5Y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estudio Rápido-Pantalla 5" translatesAutoresizingMaskIntoConstraints="NO" id="947-8q-8o2">
+                                <rect key="frame" x="20" y="100" width="394" height="762"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izE-NP-tEX">
+                                <rect key="frame" x="339" y="111" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="ov5-S2-fnf" kind="show" id="fMb-ka-Onc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="0ja-ex-xyf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="7x3-M0-m1x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eSe-fF-sqK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5425" y="-313"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="RcD-Fd-rcL">
+            <objects>
+                <viewController id="3C3-79-sv5" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QMQ-F7-DM6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estudio Rápido-Pantalla 6" translatesAutoresizingMaskIntoConstraints="NO" id="0jt-jh-fVl">
+                                <rect key="frame" x="0.0" y="88" width="436" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JfA-LT-Oco">
+                                <rect key="frame" x="325" y="105" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="X4q-Dd-aPT" kind="show" id="c2g-aL-kST"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="DSf-pJ-SM1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RGJ-ly-cs6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xdt-eV-zud" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8603" y="-327"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qY0-Pz-SwX">
+            <objects>
+                <viewController id="X4q-Dd-aPT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="me6-9A-ZJB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estudio Rápido-Pantalla 7" translatesAutoresizingMaskIntoConstraints="NO" id="JR8-rT-Kso">
+                                <rect key="frame" x="20" y="88" width="394" height="755"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Edc-d7-UPZ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dJ8-RQ-39a"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="viZ-sB-wKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9514" y="-354"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Kc8-gu-2Nj">
+            <objects>
+                <viewController id="ov5-S2-fnf" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="szX-3y-cU6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estudio Rápido-Pantalla 8" translatesAutoresizingMaskIntoConstraints="NO" id="CDd-8A-wpe">
+                                <rect key="frame" x="33" y="88" width="361" height="789"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsl-gT-L53">
+                                <rect key="frame" x="335" y="103" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="VFg-QT-J6f" kind="show" id="zaS-Ry-NyF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="QY8-tH-mp1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gav-Cs-DdJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="enk-y5-jfT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6201" y="-304"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
@@ -373,8 +630,17 @@
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Agregar Syllabus - Pantalla 7" width="140" height="306"/>
+        <image name="Estudio Rápido- pantalla 3" width="139.5" height="311.5"/>
+        <image name="Estudio Rápido-Pantalla 1" width="143" height="311.5"/>
+        <image name="Estudio Rápido-Pantalla 2" width="141" height="305"/>
+        <image name="Estudio Rápido-Pantalla 4" width="140.5" height="305.5"/>
+        <image name="Estudio Rápido-Pantalla 5" width="142.5" height="305"/>
+        <image name="Estudio Rápido-Pantalla 6" width="142.5" height="304.5"/>
+        <image name="Estudio Rápido-Pantalla 7" width="143" height="305"/>
+        <image name="Estudio Rápido-Pantalla 8" width="141" height="314.5"/>
         <image name="Ingresar-Pantalla 4" width="142.5" height="306"/>
         <image name="Log in -pantalla 2" width="140.5" height="311"/>
+        <image name="Mapa-Pantalla 1" width="142.5" height="306"/>
         <image name="Pantalla principal -pantalla 5" width="141.5" height="306"/>
         <image name="Registrar materia-Pantalla 6" width="142.5" height="304"/>
         <image name="Registrar2-Pantalla 7" width="141" height="302"/>
