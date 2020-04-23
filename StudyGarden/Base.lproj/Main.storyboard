@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o5L-Km-zbS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3113.04347826087" y="487.5"/>
+            <point key="canvasLocation" x="3126" y="353"/>
         </scene>
         <!--Materias-->
         <scene sceneID="7md-d4-V9T">
@@ -175,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0oE-Fe-xFM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2601" y="1301"/>
+            <point key="canvasLocation" x="3223" y="1134"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="or0-Ql-XIK">
@@ -197,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBi-44-VOx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3413" y="1300"/>
+            <point key="canvasLocation" x="3925" y="1134"/>
         </scene>
         <!--VRGames-->
         <scene sceneID="zI9-RY-qfX">
@@ -255,7 +255,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TFh-nq-RWj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4613.04347826087" y="1331.9196428571429"/>
+            <point key="canvasLocation" x="4897" y="1077"/>
         </scene>
         <!--Juego1-->
         <scene sceneID="x0g-XQ-Bsg">
@@ -277,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ySE-bQ-B9I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5336" y="1334"/>
+            <point key="canvasLocation" x="5693" y="1077"/>
         </scene>
         <!--Juego2-->
         <scene sceneID="tzw-81-2i9">
@@ -299,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RqQ-VG-Edz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6135" y="1333"/>
+            <point key="canvasLocation" x="6317" y="1077"/>
         </scene>
         <!--PaisajesVR1-->
         <scene sceneID="XRh-kd-2IM">
@@ -324,16 +324,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="00j-0X-XLe" kind="show" id="7m9-Bl-KGU"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <segue destination="00j-0X-XLe" kind="show" id="QvT-tj-rsS"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p9g-AK-dtN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6993" y="1311"/>
+            <point key="canvasLocation" x="7013" y="1077"/>
         </scene>
         <!--PaisajesVR2-->
         <scene sceneID="fpO-e5-j8b">
@@ -355,7 +355,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k55-Ka-hOq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7828" y="1311"/>
+            <point key="canvasLocation" x="7858" y="1077"/>
         </scene>
         <!--RevisaTuJardin1-->
         <scene sceneID="D2E-we-r7M">
@@ -380,16 +380,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <segue destination="pnd-Ip-UzZ" kind="show" id="XE2-Od-yIt"/>
+                                </connections>
                             </button>
-                            <connections>
-                                <segue destination="pnd-Ip-UzZ" kind="show" id="4Tz-oI-Luu"/>
-                            </connections>
                         </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGF-Ir-GLQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8616" y="1322"/>
+            <point key="canvasLocation" x="8657" y="1061"/>
         </scene>
         <!--RevisaTuJardin2-->
         <scene sceneID="kpY-3g-KQX">
@@ -411,7 +411,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rEj-NS-d6a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9513" y="1322"/>
+            <point key="canvasLocation" x="9513" y="1061"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XcC-rE-hBv">
@@ -564,7 +564,6 @@
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NbA-th-rJ1">
                                 <rect key="frame" x="302" y="7" width="92" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -616,7 +615,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0R-y3-QOM">
-                                <rect key="frame" x="334" y="112" width="32" height="30"/>
+                                <rect key="frame" x="362" y="88" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
@@ -624,7 +623,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estudio Rápido-Pantalla 1" translatesAutoresizingMaskIntoConstraints="NO" id="sOX-Xw-8wf">
-                                <rect key="frame" x="20" y="88" width="394" height="725"/>
+                                <rect key="frame" x="0.0" y="90" width="394" height="723"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
