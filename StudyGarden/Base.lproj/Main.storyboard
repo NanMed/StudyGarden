@@ -125,7 +125,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ZtQ-V4-gmn"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Materias" id="4Eu-8F-wdw"/>
+                    <tabBarItem key="tabBarItem" title="Materias" image="eyeglasses" catalog="system" selectedImage="eyeglasses" id="4Eu-8F-wdw"/>
                     <navigationItem key="navigationItem" id="cUJ-Ib-5yR">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="9F4-TA-K7o">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5Er-Sd-0oZ">
@@ -163,7 +163,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="CYk-3R-P28"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Tips" id="rKe-vl-gz2"/>
+                    <tabBarItem key="tabBarItem" title="Tips" image="heart.circle" catalog="system" selectedImage="heart.circle.fill" id="rKe-vl-gz2"/>
                     <navigationItem key="navigationItem" id="B28-Rg-H0b">
                         <barButtonItem key="rightBarButtonItem" title="Next" style="plain" id="X73-LB-lIw">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fCp-bf-pRp">
@@ -208,43 +208,43 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nancy Elizabeth Medina Ramírez A01338470" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiZ-7F-cWO">
-                                <rect key="frame" x="42" y="203" width="345" height="21"/>
+                                <rect key="frame" x="42" y="159" width="345" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jimena Bermudez Bautista A01338680" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9S-R8-ZcJ">
-                                <rect key="frame" x="48" y="164" width="300" height="21"/>
+                                <rect key="frame" x="48" y="120" width="300" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Natalia Guevara Muñoz A01338719  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K74-2j-duM">
-                                <rect key="frame" x="57" y="244" width="278" height="21"/>
+                                <rect key="frame" x="57" y="200" width="278" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Materia: Proyectos de Desarrollo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnE-pL-kEA">
-                                <rect key="frame" x="71" y="374" width="250" height="21"/>
+                                <rect key="frame" x="71" y="423" width="250" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="para dispositivos móviles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9U-Cm-I5E">
-                                <rect key="frame" x="100" y="403" width="192" height="21"/>
+                                <rect key="frame" x="100" y="452" width="192" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profesor: José Martín Molina Espinosa " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAm-v9-YXh">
-                                <rect key="frame" x="48" y="516" width="296" height="21"/>
+                                <rect key="frame" x="48" y="565" width="296" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App: Xcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BB9-T0-1zl">
-                                <rect key="frame" x="151.5" y="592" width="89" height="21"/>
+                                <rect key="frame" x="151.5" y="641" width="89" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -331,7 +331,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="ayq-kP-SCQ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="VRGames" id="Kej-4J-2pm"/>
+                    <tabBarItem key="tabBarItem" title="VRGames" image="gamecontroller" catalog="system" selectedImage="gamecontroller.fill" id="Kej-4J-2pm"/>
                     <navigationItem key="navigationItem" id="Q1W-M8-DQh">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Dtc-Sj-85q">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mfX-40-TuD">
@@ -658,7 +658,8 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1ob-5b-KpI">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.25716945530000002" green="0.57995426650000004" blue="0.3986228108" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.0016611111119616947" green="0.5850055520304569" blue="0.0025773651350974179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="498-oR-DaJ" kind="relationship" relationship="viewControllers" id="XrE-zL-EWQ"/>
@@ -666,7 +667,6 @@
                         <segue destination="mSn-qK-AaE" kind="relationship" relationship="viewControllers" id="6Va-kU-Ps2"/>
                         <segue destination="wYk-LA-AaM" kind="relationship" relationship="viewControllers" id="dfO-Oq-b3E"/>
                         <segue destination="56k-23-Kcb" kind="relationship" relationship="viewControllers" id="XyL-ef-4u0"/>
-                        <segue destination="fvP-WU-2zw" kind="relationship" relationship="viewControllers" id="EdJ-gC-p3h"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIM-u5-gCR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -689,7 +689,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="k1x-ij-sQ0"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Mapa" id="fUS-U7-H1n"/>
+                    <tabBarItem key="tabBarItem" title="Mapa" image="map" catalog="system" selectedImage="map.fill" id="fUS-U7-H1n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JBx-P1-m4u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -719,7 +719,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="9t2-8y-v5d"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Estudio Rápido" id="xAf-yh-Rko"/>
+                    <tabBarItem key="tabBarItem" title="Estudio Rápido" image="book" catalog="system" selectedImage="book.fill" id="xAf-yh-Rko"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jWc-W9-Bvr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -957,6 +957,15 @@
         <image name="Tips-Pantalla1" width="281" height="608"/>
         <image name="Tips-Pantalla2" width="287" height="606"/>
         <image name="Vista Materia-Pantalla 8" width="141" height="305.5"/>
+        <image name="book" catalog="system" width="128" height="101"/>
+        <image name="book.fill" catalog="system" width="128" height="100"/>
+        <image name="eyeglasses" catalog="system" width="128" height="54"/>
+        <image name="gamecontroller" catalog="system" width="128" height="82"/>
+        <image name="gamecontroller.fill" catalog="system" width="128" height="82"/>
+        <image name="heart.circle" catalog="system" width="128" height="121"/>
+        <image name="heart.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="map" catalog="system" width="128" height="113"/>
+        <image name="map.fill" catalog="system" width="128" height="113"/>
         <image name="sg1" width="400" height="828"/>
         <image name="sg2" width="395" height="807"/>
         <image name="sg3" width="394" height="806"/>
