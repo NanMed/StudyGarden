@@ -199,6 +199,94 @@
             </objects>
             <point key="canvasLocation" x="3925" y="1134"/>
         </scene>
+        <!--About-->
+        <scene sceneID="eNj-f5-XB4">
+            <objects>
+                <viewController id="fvP-WU-2zw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zcp-Zw-Hxq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nancy Elizabeth Medina Ramírez A01338470" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiZ-7F-cWO">
+                                <rect key="frame" x="42" y="203" width="345" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jimena Bermudez Bautista A01338680" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9S-R8-ZcJ">
+                                <rect key="frame" x="48" y="164" width="300" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Natalia Guevara Muñoz A01338719  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K74-2j-duM">
+                                <rect key="frame" x="57" y="244" width="278" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Materia: Proyectos de Desarrollo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnE-pL-kEA">
+                                <rect key="frame" x="71" y="374" width="250" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="para dispositivos móviles" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9U-Cm-I5E">
+                                <rect key="frame" x="100" y="403" width="192" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profesor: José Martín Molina Espinosa " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAm-v9-YXh">
+                                <rect key="frame" x="48" y="516" width="296" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="App: Xcode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BB9-T0-1zl">
+                                <rect key="frame" x="151.5" y="592" width="89" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Mock Ups: MarvelApp       " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBv-Dt-wuT">
+                                <rect key="frame" x="110" y="628" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="m9U-Cm-I5E" firstAttribute="top" secondItem="jnE-pL-kEA" secondAttribute="bottom" constant="8" id="23t-pp-jhw"/>
+                            <constraint firstItem="Hmg-IF-2dS" firstAttribute="bottom" secondItem="QBv-Dt-wuT" secondAttribute="bottom" constant="164" id="AAf-yP-IE2"/>
+                            <constraint firstItem="K74-2j-duM" firstAttribute="centerX" secondItem="jnE-pL-kEA" secondAttribute="centerX" id="N4l-Kh-0dz"/>
+                            <constraint firstItem="q9S-R8-ZcJ" firstAttribute="top" secondItem="Hmg-IF-2dS" secondAttribute="top" constant="76" id="NlA-Tp-4D5"/>
+                            <constraint firstItem="wAm-v9-YXh" firstAttribute="top" secondItem="m9U-Cm-I5E" secondAttribute="bottom" constant="92" id="ObV-UA-zAJ"/>
+                            <constraint firstItem="q9S-R8-ZcJ" firstAttribute="leading" secondItem="Hmg-IF-2dS" secondAttribute="leading" constant="48" id="OpA-7E-2YV"/>
+                            <constraint firstItem="m9U-Cm-I5E" firstAttribute="centerX" secondItem="wAm-v9-YXh" secondAttribute="centerX" id="Srk-2G-tw9"/>
+                            <constraint firstItem="QBv-Dt-wuT" firstAttribute="leading" secondItem="Hmg-IF-2dS" secondAttribute="leading" constant="110" id="Ysk-qH-rt8"/>
+                            <constraint firstItem="BB9-T0-1zl" firstAttribute="top" secondItem="wAm-v9-YXh" secondAttribute="bottom" constant="55" id="a6b-rt-K9x"/>
+                            <constraint firstItem="BB9-T0-1zl" firstAttribute="centerX" secondItem="QBv-Dt-wuT" secondAttribute="centerX" id="bYF-ct-Fcn"/>
+                            <constraint firstItem="QBv-Dt-wuT" firstAttribute="top" secondItem="BB9-T0-1zl" secondAttribute="bottom" constant="15" id="cur-dz-j08"/>
+                            <constraint firstItem="K74-2j-duM" firstAttribute="top" secondItem="jiZ-7F-cWO" secondAttribute="bottom" constant="20" id="e96-9e-mSE"/>
+                            <constraint firstItem="BB9-T0-1zl" firstAttribute="leading" secondItem="Hmg-IF-2dS" secondAttribute="leading" constant="151.5" id="eMo-rQ-X3Y"/>
+                            <constraint firstItem="jnE-pL-kEA" firstAttribute="centerX" secondItem="m9U-Cm-I5E" secondAttribute="centerX" id="gnA-Jb-qdZ"/>
+                            <constraint firstItem="BB9-T0-1zl" firstAttribute="centerX" secondItem="wAm-v9-YXh" secondAttribute="centerX" id="jYv-ju-4wp"/>
+                            <constraint firstItem="q9S-R8-ZcJ" firstAttribute="leading" secondItem="wAm-v9-YXh" secondAttribute="leading" id="me2-Dk-1re"/>
+                            <constraint firstItem="Hmg-IF-2dS" firstAttribute="trailing" secondItem="wAm-v9-YXh" secondAttribute="trailing" constant="70" id="pmE-Ex-MFJ"/>
+                            <constraint firstItem="jiZ-7F-cWO" firstAttribute="top" secondItem="q9S-R8-ZcJ" secondAttribute="bottom" constant="18" id="psT-hO-ieb"/>
+                            <constraint firstItem="jiZ-7F-cWO" firstAttribute="leading" secondItem="Hmg-IF-2dS" secondAttribute="leading" constant="42" id="zVE-sG-IMq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Hmg-IF-2dS"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About" id="eaj-86-xTS"/>
+                    <navigationItem key="navigationItem" id="mzT-mT-TOG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bZc-c4-l5q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4420" y="1787"/>
+        </scene>
         <!--VRGames-->
         <scene sceneID="zI9-RY-qfX">
             <objects>
@@ -578,6 +666,7 @@
                         <segue destination="mSn-qK-AaE" kind="relationship" relationship="viewControllers" id="6Va-kU-Ps2"/>
                         <segue destination="wYk-LA-AaM" kind="relationship" relationship="viewControllers" id="dfO-Oq-b3E"/>
                         <segue destination="56k-23-Kcb" kind="relationship" relationship="viewControllers" id="XyL-ef-4u0"/>
+                        <segue destination="fvP-WU-2zw" kind="relationship" relationship="viewControllers" id="EdJ-gC-p3h"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIM-u5-gCR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
