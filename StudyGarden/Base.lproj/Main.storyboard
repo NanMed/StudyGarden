@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16092.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bb4-6c-Umd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bb4-6c-Umd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16082.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -175,7 +175,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0oE-Fe-xFM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4131.884057971015" y="1116.2946428571429"/>
+            <point key="canvasLocation" x="2601" y="1301"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="or0-Ql-XIK">
@@ -197,7 +197,221 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bBi-44-VOx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4931.884057971015" y="1115.625"/>
+            <point key="canvasLocation" x="3413" y="1300"/>
+        </scene>
+        <!--VRGames-->
+        <scene sceneID="zI9-RY-qfX">
+            <objects>
+                <viewController title="VRGames" id="56k-23-Kcb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fhb-Kc-21D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sg1" translatesAutoresizingMaskIntoConstraints="NO" id="FDv-Ek-MGV">
+                                <rect key="frame" x="7" y="54" width="400" height="828"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDJ-XY-LNw">
+                                <rect key="frame" x="66" y="203" width="291" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="WGc-ds-ocL" kind="show" id="W8V-wy-6mR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmZ-j5-Ty5">
+                                <rect key="frame" x="66" y="288" width="291" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="ReI-4n-xu6" kind="show" id="lU7-1N-q4z"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gss-Ds-eiC">
+                                <rect key="frame" x="66" y="384" width="285" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="8jf-Bd-TvT" kind="show" id="eiq-tG-WTr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivq-ol-Cxr">
+                                <rect key="frame" x="65" y="476" width="280" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="9Iz-cA-QtO" kind="show" id="lYs-lH-brB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="ayq-kP-SCQ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="VRGames" id="Kej-4J-2pm"/>
+                    <navigationItem key="navigationItem" id="Q1W-M8-DQh">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Dtc-Sj-85q">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mfX-40-TuD">
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TFh-nq-RWj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4613.04347826087" y="1331.9196428571429"/>
+        </scene>
+        <!--Juego1-->
+        <scene sceneID="x0g-XQ-Bsg">
+            <objects>
+                <viewController title="Juego1" id="8jf-Bd-TvT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GcM-gf-RNP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sg2" translatesAutoresizingMaskIntoConstraints="NO" id="G0s-rD-fHP">
+                                <rect key="frame" x="10" y="55" width="395" height="807"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="er6-37-RT8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cXh-lO-fBw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ySE-bQ-B9I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5336" y="1334"/>
+        </scene>
+        <!--Juego2-->
+        <scene sceneID="tzw-81-2i9">
+            <objects>
+                <viewController title="Juego2" id="9Iz-cA-QtO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zHt-Gr-eO5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sg3" translatesAutoresizingMaskIntoConstraints="NO" id="gvM-hb-POk">
+                                <rect key="frame" x="10" y="56" width="394" height="806"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7YX-fc-du4"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="3z6-sE-P6S"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RqQ-VG-Edz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6135" y="1333"/>
+        </scene>
+        <!--PaisajesVR1-->
+        <scene sceneID="XRh-kd-2IM">
+            <objects>
+                <viewController title="PaisajesVR1" id="WGc-ds-ocL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VBM-Ab-Kgo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sg7" translatesAutoresizingMaskIntoConstraints="NO" id="UWs-6x-9hG">
+                                <rect key="frame" x="7" y="38" width="401" height="805"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="7k1-Qf-N4X"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="peH-Te-PY1">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="89g-wM-PQL">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZT8-dP-8ny">
+                                <rect key="frame" x="302" y="5" width="92" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                            <connections>
+                                <segue destination="00j-0X-XLe" kind="show" id="QvT-tj-rsS"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p9g-AK-dtN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6993" y="1311"/>
+        </scene>
+        <!--PaisajesVR2-->
+        <scene sceneID="fpO-e5-j8b">
+            <objects>
+                <viewController title="PaisajesVR2" id="00j-0X-XLe" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="i1n-e1-GbQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sg8" translatesAutoresizingMaskIntoConstraints="NO" id="owa-yM-5Lq">
+                                <rect key="frame" x="7" y="38" width="398" height="817"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="M7S-8o-RDM"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="pcS-cE-kGD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k55-Ka-hOq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7828" y="1311"/>
+        </scene>
+        <!--RevisaTuJardin1-->
+        <scene sceneID="D2E-we-r7M">
+            <objects>
+                <viewController title="RevisaTuJardin1" id="ReI-4n-xu6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cjL-YI-0MF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sg4" translatesAutoresizingMaskIntoConstraints="NO" id="Hze-Mo-7Xw">
+                                <rect key="frame" x="0.0" y="38" width="403" height="823"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Aa8-yS-qsd"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="jGs-uX-dkf">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="S6f-ke-9Ne">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="f4P-Vt-SIg">
+                                <rect key="frame" x="302" y="5" width="92" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Next"/>
+                            </button>
+                            <connections>
+                                <segue destination="pnd-Ip-UzZ" kind="show" id="4Tz-oI-Luu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gGF-Ir-GLQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8616" y="1322"/>
+        </scene>
+        <!--RevisaTuJardin2-->
+        <scene sceneID="kpY-3g-KQX">
+            <objects>
+                <viewController title="RevisaTuJardin2" id="pnd-Ip-UzZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3EZ-2n-EfO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sg5" translatesAutoresizingMaskIntoConstraints="NO" id="LFv-Gp-dZa">
+                                <rect key="frame" x="13" y="36" width="389" height="820"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="iZP-Mo-vdR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rct-EZ-myN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rEj-NS-d6a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9513" y="1322"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="XcC-rE-hBv">
@@ -364,6 +578,7 @@
                         <segue destination="xp6-GR-iTi" kind="relationship" relationship="viewControllers" id="ZE2-Lk-0X6"/>
                         <segue destination="mSn-qK-AaE" kind="relationship" relationship="viewControllers" id="6Va-kU-Ps2"/>
                         <segue destination="wYk-LA-AaM" kind="relationship" relationship="viewControllers" id="dfO-Oq-b3E"/>
+                        <segue destination="56k-23-Kcb" kind="relationship" relationship="viewControllers" id="XyL-ef-4u0"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIM-u5-gCR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -400,10 +615,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estudio Rápido-Pantalla 1" translatesAutoresizingMaskIntoConstraints="NO" id="sOX-Xw-8wf">
-                                <rect key="frame" x="20" y="88" width="394" height="725"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0R-y3-QOM">
                                 <rect key="frame" x="334" y="112" width="32" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -412,6 +623,10 @@
                                     <segue destination="TMW-Zv-V58" kind="show" id="Tug-5N-gvU"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Estudio Rápido-Pantalla 1" translatesAutoresizingMaskIntoConstraints="NO" id="sOX-Xw-8wf">
+                                <rect key="frame" x="20" y="88" width="394" height="725"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="9t2-8y-v5d"/>
@@ -621,12 +836,18 @@
                     <navigationItem key="navigationItem" id="Gav-Cs-DdJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="enk-y5-jfT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kHd-ab-PJC">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="43"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <state key="normal" title="Next"/>
+                </button>
             </objects>
             <point key="canvasLocation" x="6201" y="-304"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cSk-np-g9L"/>
+        <segue reference="KIg-B5-Q6w"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Agregar Syllabus - Pantalla 7" width="140" height="306"/>
@@ -648,5 +869,12 @@
         <image name="Tips-Pantalla1" width="281" height="608"/>
         <image name="Tips-Pantalla2" width="287" height="606"/>
         <image name="Vista Materia-Pantalla 8" width="141" height="305.5"/>
+        <image name="sg1" width="400" height="828"/>
+        <image name="sg2" width="395" height="807"/>
+        <image name="sg3" width="394" height="806"/>
+        <image name="sg4" width="403" height="823"/>
+        <image name="sg5" width="389" height="820"/>
+        <image name="sg7" width="401" height="805"/>
+        <image name="sg8" width="398" height="817"/>
     </resources>
 </document>
