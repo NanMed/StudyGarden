@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Inicio-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="StudyGarden" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Inicio" id="BYZ-38-t0r" customClass="ViewController" customModule="StudyGarden" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,10 +43,10 @@
             </objects>
             <point key="canvasLocation" x="1221.7391304347827" y="498.88392857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Registro-->
         <scene sceneID="Yop-Eg-tW3">
             <objects>
-                <viewController id="VvD-fJ-MCE" sceneMemberID="viewController">
+                <viewController title="Registro" id="VvD-fJ-MCE" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ie1-86-F4a">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="2224.6376811594205" y="498.88392857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Inicio sesion-->
         <scene sceneID="ekg-0o-stz">
             <objects>
-                <viewController id="kHz-Fv-EgC" sceneMemberID="viewController">
+                <viewController title="Inicio sesion" id="kHz-Fv-EgC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IjS-4u-2Ik">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -177,10 +177,10 @@
             </objects>
             <point key="canvasLocation" x="3223" y="1134"/>
         </scene>
-        <!--View Controller-->
+        <!--Tips Camara-->
         <scene sceneID="or0-Ql-XIK">
             <objects>
-                <viewController id="nKl-31-H0M" sceneMemberID="viewController">
+                <viewController title="Tips Camara" id="nKl-31-H0M" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wvS-ec-hci">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -202,7 +202,7 @@
         <!--About-->
         <scene sceneID="eNj-f5-XB4">
             <objects>
-                <viewController id="fvP-WU-2zw" sceneMemberID="viewController">
+                <viewController title="About" id="fvP-WU-2zw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zcp-Zw-Hxq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -501,10 +501,10 @@
             </objects>
             <point key="canvasLocation" x="9513" y="1061"/>
         </scene>
-        <!--View Controller-->
+        <!--Registar materia-->
         <scene sceneID="XcC-rE-hBv">
             <objects>
-                <viewController id="qDw-Jc-apw" sceneMemberID="viewController">
+                <viewController title="Registar materia" id="qDw-Jc-apw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jJ1-kQ-Bhw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -534,10 +534,10 @@
             </objects>
             <point key="canvasLocation" x="5715.9420289855079" y="371.65178571428572"/>
         </scene>
-        <!--View Controller-->
+        <!--Registrar syllabus-->
         <scene sceneID="ER2-0U-3Kx">
             <objects>
-                <viewController id="b99-UB-QIu" sceneMemberID="viewController">
+                <viewController title="Registrar syllabus" id="b99-UB-QIu" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uAx-5F-g6w">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -568,10 +568,10 @@
             </objects>
             <point key="canvasLocation" x="6584.057971014493" y="371.65178571428572"/>
         </scene>
-        <!--View Controller-->
+        <!--Registar materia 2-->
         <scene sceneID="wkY-EK-VOZ">
             <objects>
-                <viewController id="zyw-19-VWr" sceneMemberID="viewController">
+                <viewController title="Registar materia 2" id="zyw-19-VWr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="okf-pe-6c5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -602,10 +602,10 @@
             </objects>
             <point key="canvasLocation" x="7460.8695652173919" y="371.65178571428572"/>
         </scene>
-        <!--View Controller-->
+        <!--Materia registrada-->
         <scene sceneID="K4b-WC-G97">
             <objects>
-                <viewController id="7Bh-0c-9uo" sceneMemberID="viewController">
+                <viewController title="Materia registrada" id="7Bh-0c-9uo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="T1c-54-Iqh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -725,10 +725,10 @@
             </objects>
             <point key="canvasLocation" x="3986.9565217391309" y="-342.1875"/>
         </scene>
-        <!--View Controller-->
+        <!--Estudio rapido 2-->
         <scene sceneID="T2Y-qw-90E">
             <objects>
-                <viewController id="TMW-Zv-V58" sceneMemberID="viewController">
+                <viewController title="Estudio rapido 2" id="TMW-Zv-V58" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EKz-tQ-3vC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -753,12 +753,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a5v-rP-0O5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4751" y="-327"/>
+            <point key="canvasLocation" x="4751" y="-342"/>
         </scene>
-        <!--View Controller-->
+        <!--Estudio rapido 6-->
         <scene sceneID="X6y-n7-MBs">
             <objects>
-                <viewController id="VFg-QT-J6f" sceneMemberID="viewController">
+                <viewController title="Estudio rapido 6" id="VFg-QT-J6f" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JY7-1i-fcR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -783,12 +783,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HMv-h5-gZ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6959" y="-304"/>
+            <point key="canvasLocation" x="6959" y="-342"/>
         </scene>
-        <!--View Controller-->
+        <!--Estudio rapido 7-->
         <scene sceneID="0dy-bA-Gzb">
             <objects>
-                <viewController id="aZE-Ev-VqV" sceneMemberID="viewController">
+                <viewController title="Estudio rapido 7" id="aZE-Ev-VqV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dyD-ci-QBD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -813,12 +813,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKa-zX-Of8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7761" y="-313"/>
+            <point key="canvasLocation" x="7759" y="-342"/>
         </scene>
-        <!--View Controller-->
+        <!--Estudios rapido 3-->
         <scene sceneID="Rol-DA-BLr">
             <objects>
-                <viewController id="7dk-dZ-PEF" sceneMemberID="viewController">
+                <viewController title="Estudios rapido 3" id="7dk-dZ-PEF" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0iy-Rz-a5Y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -843,12 +843,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eSe-fF-sqK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5425" y="-313"/>
+            <point key="canvasLocation" x="5441" y="-342"/>
         </scene>
-        <!--View Controller-->
+        <!--Estudio rapido 8-->
         <scene sceneID="RcD-Fd-rcL">
             <objects>
-                <viewController id="3C3-79-sv5" sceneMemberID="viewController">
+                <viewController title="Estudio rapido 8" id="3C3-79-sv5" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QMQ-F7-DM6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -873,12 +873,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xdt-eV-zud" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8603" y="-327"/>
+            <point key="canvasLocation" x="8587" y="-342"/>
         </scene>
-        <!--View Controller-->
+        <!--Estudio rapido 9-->
         <scene sceneID="qY0-Pz-SwX">
             <objects>
-                <viewController id="X4q-Dd-aPT" sceneMemberID="viewController">
+                <viewController title="Estudio rapido 9" id="X4q-Dd-aPT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="me6-9A-ZJB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -895,12 +895,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="viZ-sB-wKc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9514" y="-354"/>
+            <point key="canvasLocation" x="9512" y="-342"/>
         </scene>
-        <!--View Controller-->
+        <!--Estudio rapido 5-->
         <scene sceneID="Kc8-gu-2Nj">
             <objects>
-                <viewController id="ov5-S2-fnf" sceneMemberID="viewController">
+                <viewController title="Estudio rapido 5" id="ov5-S2-fnf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="szX-3y-cU6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -931,7 +931,7 @@
                     <state key="normal" title="Next"/>
                 </button>
             </objects>
-            <point key="canvasLocation" x="6201" y="-304"/>
+            <point key="canvasLocation" x="6207" y="-342"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
