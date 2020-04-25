@@ -213,19 +213,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nancy Elizabeth Medina Ramírez A01338470" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jiZ-7F-cWO">
-                                <rect key="frame" x="42" y="159" width="345" height="21"/>
+                                <rect key="frame" x="42" y="203" width="345" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jimena Bermudez Bautista A01338680" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q9S-R8-ZcJ">
-                                <rect key="frame" x="48" y="120" width="300" height="21"/>
+                                <rect key="frame" x="48" y="164" width="300" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Natalia Guevara Muñoz A01338719  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K74-2j-duM">
-                                <rect key="frame" x="57" y="200" width="278" height="21"/>
+                                <rect key="frame" x="57" y="244" width="278" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -627,11 +627,10 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="oEa-cA-68F" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="nj9-at-zZb">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="uHC-6C-tMB">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NbA-th-rJ1">
-                                <rect key="frame" x="302" y="7" width="92" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </button>
+                        <barButtonItem key="rightBarButtonItem" title="About" image="questionmark.circle" catalog="system" id="H2E-On-Q9d">
+                            <connections>
+                                <segue destination="fvP-WU-2zw" kind="show" id="86Q-LE-NsE"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1ob-5b-KpI">
@@ -945,6 +944,7 @@
         <image name="heart.circle.fill" catalog="system" width="128" height="121"/>
         <image name="map" catalog="system" width="128" height="113"/>
         <image name="map.fill" catalog="system" width="128" height="113"/>
+        <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <image name="sg1" width="400" height="828"/>
         <image name="sg2" width="395" height="807"/>
         <image name="sg3" width="394" height="806"/>
