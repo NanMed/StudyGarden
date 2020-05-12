@@ -213,32 +213,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fZk-lk-zyE">
-                                <rect key="frame" x="6" y="53" width="400" height="735"/>
+                                <rect key="frame" x="10" y="97" width="396" height="691"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcR-iC-fUZ">
-                                <rect key="frame" x="94" y="805" width="53" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Cámara"/>
-                                <connections>
-                                    <action selector="SelCamara:" destination="Ggg-rE-pob" eventType="touchUpInside" id="Ejx-oZ-z7U"/>
-                                    <action selector="camara:" destination="Ggg-rE-pob" eventType="touchUpInside" id="yMA-QI-0f8"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zon-sM-X9S">
                                 <rect key="frame" x="183" y="805" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Albúm"/>
                                 <connections>
                                     <action selector="album:" destination="Ggg-rE-pob" eventType="touchUpInside" id="8Mk-L2-34Z"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dTz-lC-1F6">
-                                <rect key="frame" x="262" y="805" width="56" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Guardar"/>
-                                <connections>
-                                    <action selector="guardarImg:" destination="Ggg-rE-pob" eventType="touchUpInside" id="X4S-ag-d0y"/>
+                                    <action selector="album:" destination="8oc-tM-OdY" eventType="touchUpInside" id="gyT-h4-cKA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -247,14 +231,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="hH3-y3-ycp"/>
                     <connections>
-                        <outlet property="buttonCamara" destination="xcR-iC-fUZ" id="xAt-a0-XgB"/>
                         <outlet property="fotoVista" destination="fZk-lk-zyE" id="Fly-TR-wWT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mDg-c7-cYL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Ggg-rE-pob" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3441" y="1892"/>
+            <point key="canvasLocation" x="3440.579710144928" y="1891.7410714285713"/>
         </scene>
         <!--About-->
         <scene sceneID="eNj-f5-XB4">
