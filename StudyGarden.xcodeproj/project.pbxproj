@@ -13,7 +13,6 @@
 		1122AAC6244EAD5800F56CDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1122AAC4244EAD5800F56CDF /* Main.storyboard */; };
 		1122AAC8244EAD5B00F56CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1122AAC7244EAD5B00F56CDF /* Assets.xcassets */; };
 		1122AACB244EAD5B00F56CDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1122AAC9244EAD5B00F56CDF /* LaunchScreen.storyboard */; };
-		A756D668246A7418004AD6D6 /* TableViewMateriasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A756D667246A7418004AD6D6 /* TableViewMateriasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		1122AAC7244EAD5B00F56CDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1122AACA244EAD5B00F56CDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1122AACC244EAD5B00F56CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A756D667246A7418004AD6D6 /* TableViewMateriasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewMateriasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +63,6 @@
 				1122AAC7244EAD5B00F56CDF /* Assets.xcassets */,
 				1122AAC9244EAD5B00F56CDF /* LaunchScreen.storyboard */,
 				1122AACC244EAD5B00F56CDF /* Info.plist */,
-				A756D667246A7418004AD6D6 /* TableViewMateriasViewController.swift */,
 			);
 			path = StudyGarden;
 			sourceTree = "<group>";
@@ -141,7 +138,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A756D668246A7418004AD6D6 /* TableViewMateriasViewController.swift in Sources */,
 				1122AAC3244EAD5800F56CDF /* ViewController.swift in Sources */,
 				1122AABF244EAD5800F56CDF /* AppDelegate.swift in Sources */,
 				1122AAC1244EAD5800F56CDF /* SceneDelegate.swift in Sources */,
