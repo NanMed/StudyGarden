@@ -104,17 +104,13 @@
         <!--Materias-->
         <scene sceneID="7md-d4-V9T">
             <objects>
-                <viewController id="498-oR-DaJ" sceneMemberID="viewController">
+                <viewController id="498-oR-DaJ" customClass="TableViewMateriasViewController" customModule="StudyGarden" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vh8-X9-L6P">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pantalla principal -pantalla 5" translatesAutoresizingMaskIntoConstraints="NO" id="7mv-qj-Oqa">
-                                <rect key="frame" x="-23" y="75" width="462" height="779"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2r-d7-vX2">
-                                <rect key="frame" x="328" y="168" width="40" height="39"/>
+                                <rect key="frame" x="368" y="168" width="3877" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <segue destination="qDw-Jc-apw" kind="show" id="24l-OW-h5C"/>
@@ -127,8 +123,32 @@
                                     <segue destination="7Bh-0c-9uo" kind="show" id="ZwD-ak-d5T"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7ef-4u-4j4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="xee-la-QxN">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xee-la-QxN" id="f9W-5F-C8w">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="498-oR-DaJ" id="X7W-EN-gXu"/>
+                                    <outlet property="delegate" destination="498-oR-DaJ" id="iF4-QB-x3L"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7ef-4u-4j4" firstAttribute="trailing" secondItem="ZtQ-V4-gmn" secondAttribute="trailing" id="Rgm-hj-NHK"/>
+                            <constraint firstItem="7ef-4u-4j4" firstAttribute="top" secondItem="ZtQ-V4-gmn" secondAttribute="top" id="TUc-6A-zUC"/>
+                            <constraint firstItem="7ef-4u-4j4" firstAttribute="bottom" secondItem="ZtQ-V4-gmn" secondAttribute="bottom" id="ap2-F9-hst"/>
+                            <constraint firstItem="7ef-4u-4j4" firstAttribute="leading" secondItem="ZtQ-V4-gmn" secondAttribute="leading" id="kOI-cN-efd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="ZtQ-V4-gmn"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Materias" image="eyeglasses" catalog="system" selectedImage="eyeglasses" id="4Eu-8F-wdw"/>
@@ -140,6 +160,9 @@
                             </button>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="TablbeViewMaterias" destination="7ef-4u-4j4" id="AzM-xS-AXw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bVg-bf-D1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1009,7 +1032,6 @@
         <image name="Ingresar-Pantalla 4" width="142.5" height="306"/>
         <image name="Log in -pantalla 2" width="140.5" height="311"/>
         <image name="Mapa-Pantalla 1" width="142.5" height="306"/>
-        <image name="Pantalla principal -pantalla 5" width="141.5" height="306"/>
         <image name="Registrar materia-Pantalla 6" width="142.5" height="304"/>
         <image name="Registrar2-Pantalla 7" width="141" height="302"/>
         <image name="Registrate-Pantalla 3" width="142" height="306"/>
