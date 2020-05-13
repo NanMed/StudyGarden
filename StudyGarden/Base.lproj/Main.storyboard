@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bb4-6c-Umd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16092.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bb4-6c-Umd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16082.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -760,20 +760,23 @@
         <!--Mapa-->
         <scene sceneID="5Fh-qq-1wY">
             <objects>
-                <viewController id="mSn-qK-AaE" sceneMemberID="viewController">
+                <viewController id="mSn-qK-AaE" customClass="mapViewController" customModule="StudyGarden" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ovV-QS-GZz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Mapa-Pantalla 1" translatesAutoresizingMaskIntoConstraints="NO" id="QaO-qW-9sA">
-                                <rect key="frame" x="20" y="53" width="374" height="760"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="lOx-7K-VGg">
+                                <rect key="frame" x="11" y="96" width="393" height="707"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="k1x-ij-sQ0"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mapa" image="map" catalog="system" selectedImage="map.fill" id="fUS-U7-H1n"/>
+                    <connections>
+                        <outlet property="mapa" destination="lOx-7K-VGg" id="Hc3-U9-kyD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JBx-P1-m4u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1059,7 +1062,6 @@
         <image name="Estudio Rápido-Pantalla 8" width="141" height="314.5"/>
         <image name="Ingresar-Pantalla 4" width="142.5" height="306"/>
         <image name="Log in -pantalla 2" width="140.5" height="311"/>
-        <image name="Mapa-Pantalla 1" width="142.5" height="306"/>
         <image name="Registrar materia-Pantalla 6" width="142.5" height="304"/>
         <image name="Registrar2-Pantalla 7" width="141" height="302"/>
         <image name="Registrate-Pantalla 3" width="142" height="306"/>
