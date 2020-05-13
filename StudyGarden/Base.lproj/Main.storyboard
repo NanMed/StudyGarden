@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16092.1" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bb4-6c-Umd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bb4-6c-Umd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16082.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -585,11 +585,11 @@
             </objects>
             <point key="canvasLocation" x="5286" y="343"/>
         </scene>
-        <!--Item-->
+        <!--Materias-->
         <scene sceneID="daM-Or-G2y">
             <objects>
                 <navigationController id="azk-6Q-yPe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" image="book" catalog="system" selectedImage="book.fill" id="STD-96-DGV"/>
+                    <tabBarItem key="tabBarItem" title="Materias" image="eyeglasses" catalog="system" selectedImage="eyeglasses" id="STD-96-DGV"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hMC-cZ-0dh">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1070,6 +1070,7 @@
         <image name="Vista Materia-Pantalla 8" width="141" height="305.5"/>
         <image name="book" catalog="system" width="128" height="101"/>
         <image name="book.fill" catalog="system" width="128" height="100"/>
+        <image name="eyeglasses" catalog="system" width="128" height="54"/>
         <image name="gamecontroller" catalog="system" width="128" height="82"/>
         <image name="gamecontroller.fill" catalog="system" width="128" height="82"/>
         <image name="heart.circle" catalog="system" width="128" height="121"/>
