@@ -775,7 +775,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Mapa" image="map" catalog="system" selectedImage="map.fill" id="fUS-U7-H1n"/>
                     <connections>
-                        <outlet property="mapa" destination="lOx-7K-VGg" id="Hc3-U9-kyD"/>
+                        <outlet property="mapView" destination="lOx-7K-VGg" id="Ylj-Gn-EuW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JBx-P1-m4u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
