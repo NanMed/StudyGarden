@@ -101,50 +101,6 @@
             </objects>
             <point key="canvasLocation" x="3126" y="353"/>
         </scene>
-        <!--Materias-->
-        <scene sceneID="7md-d4-V9T">
-            <objects>
-                <viewController id="498-oR-DaJ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Vh8-X9-L6P">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Pantalla principal -pantalla 5" translatesAutoresizingMaskIntoConstraints="NO" id="7mv-qj-Oqa">
-                                <rect key="frame" x="-23" y="75" width="462" height="779"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2r-d7-vX2">
-                                <rect key="frame" x="328" y="168" width="40" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="qDw-Jc-apw" kind="show" id="24l-OW-h5C"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cT-ny-DTO">
-                                <rect key="frame" x="208" y="222" width="160" height="129"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <connections>
-                                    <segue destination="7Bh-0c-9uo" kind="show" id="ZwD-ak-d5T"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="ZtQ-V4-gmn"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Materias" image="eyeglasses" catalog="system" selectedImage="eyeglasses" id="4Eu-8F-wdw"/>
-                    <navigationItem key="navigationItem" id="cUJ-Ib-5yR">
-                        <barButtonItem key="rightBarButtonItem" style="plain" id="9F4-TA-K7o">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5Er-Sd-0oZ">
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Next"/>
-                            </button>
-                        </barButtonItem>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bVg-bf-D1M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4897.1014492753629" y="362.94642857142856"/>
-        </scene>
         <!--Tips-->
         <scene sceneID="hD7-Vh-oY8">
             <objects>
@@ -594,6 +550,58 @@
             </objects>
             <point key="canvasLocation" x="9513" y="1061"/>
         </scene>
+        <!--Materias-->
+        <scene sceneID="UBm-nC-E4y">
+            <objects>
+                <tableViewController id="Slm-s3-JGb" customClass="MateriasViewController" customModule="StudyGarden" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jjt-S5-h9D">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="kBU-g5-xPy">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kBU-g5-xPy" id="BTI-gY-h1s">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Slm-s3-JGb" id="hZJ-AE-UQf"/>
+                            <outlet property="delegate" destination="Slm-s3-JGb" id="EXq-oF-bFf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Materias" id="rgX-ZQ-pgq">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="h0i-bh-Nfl">
+                            <connections>
+                                <segue destination="qDw-Jc-apw" kind="show" id="HXm-uj-wfn"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0sB-g7-5t6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5286" y="343"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="daM-Or-G2y">
+            <objects>
+                <navigationController id="azk-6Q-yPe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" image="book" catalog="system" selectedImage="book.fill" id="STD-96-DGV"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hMC-cZ-0dh">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Slm-s3-JGb" kind="relationship" relationship="rootViewController" id="WgM-i2-poZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hXK-l9-gwW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4583" y="343"/>
+        </scene>
         <!--Registar materia-->
         <scene sceneID="XcC-rE-hBv">
             <objects>
@@ -621,7 +629,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lzZ-kr-WTw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5715.9420289855079" y="371.65178571428572"/>
+            <point key="canvasLocation" x="6010" y="343"/>
         </scene>
         <!--Registrar syllabus-->
         <scene sceneID="ER2-0U-3Kx">
@@ -651,7 +659,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nff-i5-3t0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6584.057971014493" y="371.65178571428572"/>
+            <point key="canvasLocation" x="6735" y="372"/>
         </scene>
         <!--Registar materia 2-->
         <scene sceneID="wkY-EK-VOZ">
@@ -677,7 +685,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i8Q-bf-PvO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7460.8695652173919" y="371.65178571428572"/>
+            <point key="canvasLocation" x="7519" y="372"/>
         </scene>
         <!--Materia registrada-->
         <scene sceneID="K4b-WC-G97">
@@ -738,16 +746,16 @@
                         <color key="selectedImageTintColor" red="0.0016611111119616947" green="0.5850055520304569" blue="0.0025773651350974179" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
-                        <segue destination="498-oR-DaJ" kind="relationship" relationship="viewControllers" id="XrE-zL-EWQ"/>
                         <segue destination="xp6-GR-iTi" kind="relationship" relationship="viewControllers" id="ZE2-Lk-0X6"/>
                         <segue destination="mSn-qK-AaE" kind="relationship" relationship="viewControllers" id="6Va-kU-Ps2"/>
                         <segue destination="wYk-LA-AaM" kind="relationship" relationship="viewControllers" id="dfO-Oq-b3E"/>
                         <segue destination="56k-23-Kcb" kind="relationship" relationship="viewControllers" id="XyL-ef-4u0"/>
+                        <segue destination="azk-6Q-yPe" kind="relationship" relationship="viewControllers" id="xdG-gL-aeb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kIM-u5-gCR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3986.9565217391309" y="362.94642857142856"/>
+            <point key="canvasLocation" x="3883" y="343"/>
         </scene>
         <!--Mapa-->
         <scene sceneID="5Fh-qq-1wY">
@@ -1052,7 +1060,6 @@
         <image name="Ingresar-Pantalla 4" width="142.5" height="306"/>
         <image name="Log in -pantalla 2" width="140.5" height="311"/>
         <image name="Mapa-Pantalla 1" width="142.5" height="306"/>
-        <image name="Pantalla principal -pantalla 5" width="141.5" height="306"/>
         <image name="Registrar materia-Pantalla 6" width="142.5" height="304"/>
         <image name="Registrar2-Pantalla 7" width="141" height="302"/>
         <image name="Registrate-Pantalla 3" width="142" height="306"/>
@@ -1061,7 +1068,6 @@
         <image name="Vista Materia-Pantalla 8" width="141" height="305.5"/>
         <image name="book" catalog="system" width="128" height="101"/>
         <image name="book.fill" catalog="system" width="128" height="100"/>
-        <image name="eyeglasses" catalog="system" width="128" height="54"/>
         <image name="gamecontroller" catalog="system" width="128" height="82"/>
         <image name="gamecontroller.fill" catalog="system" width="128" height="82"/>
         <image name="heart.circle" catalog="system" width="128" height="121"/>

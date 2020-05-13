@@ -13,6 +13,7 @@
 		1122AAC6244EAD5800F56CDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1122AAC4244EAD5800F56CDF /* Main.storyboard */; };
 		1122AAC8244EAD5B00F56CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1122AAC7244EAD5B00F56CDF /* Assets.xcassets */; };
 		1122AACB244EAD5B00F56CDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1122AAC9244EAD5B00F56CDF /* LaunchScreen.storyboard */; };
+		A725A965246B8BCE00F0BA71 /* MateriasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A725A964246B8BCE00F0BA71 /* MateriasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1122AAC7244EAD5B00F56CDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1122AACA244EAD5B00F56CDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1122AACC244EAD5B00F56CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A725A964246B8BCE00F0BA71 /* MateriasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateriasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				1122AAC7244EAD5B00F56CDF /* Assets.xcassets */,
 				1122AAC9244EAD5B00F56CDF /* LaunchScreen.storyboard */,
 				1122AACC244EAD5B00F56CDF /* Info.plist */,
+				A725A964246B8BCE00F0BA71 /* MateriasViewController.swift */,
 			);
 			path = StudyGarden;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A725A965246B8BCE00F0BA71 /* MateriasViewController.swift in Sources */,
 				1122AAC3244EAD5800F56CDF /* ViewController.swift in Sources */,
 				1122AABF244EAD5800F56CDF /* AppDelegate.swift in Sources */,
 				1122AAC1244EAD5800F56CDF /* SceneDelegate.swift in Sources */,
