@@ -20,6 +20,12 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Se requiere usar la camara</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Se va a guardar las fotos en el album</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Se requiere usar el carrete</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

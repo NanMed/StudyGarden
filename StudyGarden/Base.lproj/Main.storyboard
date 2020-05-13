@@ -217,12 +217,28 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zon-sM-X9S">
-                                <rect key="frame" x="183" y="805" width="44" height="30"/>
+                                <rect key="frame" x="186" y="805" width="44" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Albúm"/>
                                 <connections>
                                     <action selector="album:" destination="Ggg-rE-pob" eventType="touchUpInside" id="8Mk-L2-34Z"/>
                                     <action selector="album:" destination="8oc-tM-OdY" eventType="touchUpInside" id="gyT-h4-cKA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UC1-W2-YA2">
+                                <rect key="frame" x="70" y="805" width="53" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cámara"/>
+                                <connections>
+                                    <action selector="camara:" destination="8oc-tM-OdY" eventType="touchUpInside" id="YMR-fW-cFJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="emk-Ym-lic">
+                                <rect key="frame" x="288" y="805" width="56" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Guardar"/>
+                                <connections>
+                                    <action selector="guardarImg:" destination="8oc-tM-OdY" eventType="touchUpInside" id="0nX-Rr-ud4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -231,6 +247,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="hH3-y3-ycp"/>
                     <connections>
+                        <outlet property="buttonCamara" destination="UC1-W2-YA2" id="ksy-RF-I2K"/>
                         <outlet property="fotoVista" destination="fZk-lk-zyE" id="Fly-TR-wWT"/>
                     </connections>
                 </viewController>

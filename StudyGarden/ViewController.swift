@@ -13,6 +13,7 @@ import Vision
 class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var fotoVista: UIImageView!
+    @IBOutlet weak var buttonCamara: UIButton!
     private let miPicker = UIImagePickerController()
     
     override func viewDidLoad() {
@@ -23,16 +24,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         //}
         miPicker.delegate = self
     }
-
-    //@IBAction func camara() {
-        //miPicker.sourceType = UIImagePickerController.SourceType.camera
-        //present(miPicker, animated: true, completion: nil)
-    //}
     
-    //@IBAction func guardarImg() {
-        //UIImageWriteToSavedPhotosAlbum(fotoVista.image!, nil, nil, nil)
-    //}
+    @IBAction func camara(_ sender: Any) {
+        miPicker.sourceType = UIImagePickerController.SourceType.camera
+        present(miPicker, animated: true, completion: nil)
+    }
     
+    @IBAction func guardarImg(_ sender: Any) {
+        UIImageWriteToSavedPhotosAlbum(fotoVista.image!, nil, nil, nil)
+    }
     
     @IBAction func album(_ sender: Any) {
         print("Dentro")
@@ -40,9 +40,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         present(miPicker, animated: true, completion: nil)
     }
     
-    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        print("Dentro de nuevo")
-        fotoVista.image = info[UIImagePickerController.InfoKey.originalImage.rawValue] as? UIImage
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        fotoVista.image = info[UIImagePickerControllerOriginalImage] as? UIImage
         picker.dismiss(animated: true, completion: nil)
     }
     
