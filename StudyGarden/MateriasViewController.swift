@@ -56,8 +56,23 @@ class MateriasViewController: UITableViewController, UISearchResultsUpdating {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         let url = URL(string: direccion)
+        /*if let url = URL(string: direccion){
+            URLSession.shared.dataTask(with: url){ (datos:Data?, reponse:URLResponse?, error:Error?) in
+                if error == nil{
+                    print("Everything fine")
+                    if datos != nil{
+                        print("I got data")
+                        if let json = try? JSONSerialization.jsonObject(with: datos!, options: []) as? [Any?]{
+                            print(json)
+                        }
+                    }
+                }else{
+                    print("We have an error")
+                }
+                }.resume()
+        }*/
+        
         let datos = try? Data(contentsOf: url!)
         nuevoArray = try! JSONSerialization.jsonObject(with: datos!) as? [Any]
         datosFiltrados = nuevoArray!
