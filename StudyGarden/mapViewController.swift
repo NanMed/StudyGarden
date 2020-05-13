@@ -22,7 +22,7 @@ class mapViewController: UIViewController,CLLocationManagerDelegate {
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
     locationManager.requestWhenInUseAuthorization()
-        mapa.mapType=MKMapType.hybrid
+        mapa.mapType=MKMapType.standard
         let cl=CLLocationCoordinate2DMake(19.3574332,-99.2705678)
         //mapa.region=MKCoordinateRegion(center: cl, latitudinalMeters: 2000, longitudinalMeters: 2000)
         let delta=CLLocationDegrees(0.01)
