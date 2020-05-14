@@ -11,6 +11,7 @@ import UIKit
 class MateriasViewController: UITableViewController, UISearchResultsUpdating {
 
     @IBOutlet weak var MateriasTableView: UITableView!
+
     
     let direccion="http://www.martinmolina.com.mx/202011/StudyGarden/Materias.json"
     
@@ -116,6 +117,35 @@ class MateriasViewController: UITableViewController, UISearchResultsUpdating {
         cell.textLabel?.text=s
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        var indice = 0
+        var objetoMateria = [String:Any]()
+        //Paso 15: crear un identificador para el controlador de vista a nivel detalle
+        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Detalle") as! MateriaRegistradaViewController
+        //Verificar si la vista actual es la de búsqueda
+        if (self.searchController.isActive)
+        {
+            indice = indexPath.row
+            objetoMateria = datosFiltrados[indice] as! [String: Any]
+            print("Entre en if")
+            
+        }
+        //sino utilizar la vista sin filtro
+        else
+        {
+            indice = indexPath.row
+            objetoMateria = nuevoArray![indice] as! [String: Any]
+            print("Entre en else")
+        }
+        
+        let s:String = objetoMateria["Materia"] as! String
+        
+        siguienteVista.materia = s
+        self.navigationController?.pushViewController(siguienteVista, animated: true)
+        print(s)
+        
     }
 
 
