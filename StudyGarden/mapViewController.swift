@@ -8,11 +8,12 @@
 
 import UIKit
 import MapKit
+import CoreLocation
 
 
 class mapViewController: UIViewController, MKMapViewDelegate {
     let treeAnnotations = TreeAnnotations()
-    let initialCoordinate = CLLocationCoordinate2DMake(19.3576047,-99.2700138)
+    let initialCoordinate = CLLocationCoordinate2DMake(19.3573267,-99.2699144)
   
     @IBOutlet weak var mapView: MKMapView!
     
@@ -51,7 +52,7 @@ class mapViewController: UIViewController, MKMapViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         mapView.delegate = self
         //set intial region
-        let initialregion = MKCoordinateRegion(center: initialCoordinate, span: MKCoordinateSpanMake(0.25, 0.25))
+        let initialregion = MKCoordinateRegion(center: initialCoordinate, span: MKCoordinateSpanMake(0.001, 0.001))
         mapView.setRegion(initialregion, animated: true)
         // add the annotations
         mapView.addAnnotations(treeAnnotations.restaurants)
