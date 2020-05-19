@@ -163,7 +163,7 @@
         <!--Sel foto-->
         <scene sceneID="xYB-xn-2Gj">
             <objects>
-                <viewController title="Sel foto" id="8oc-tM-OdY" customClass="ViewController" customModule="StudyGarden" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Sel foto" id="8oc-tM-OdY" customClass="ExploraObjetosViewController" customModule="StudyGarden" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c4s-S5-PaH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -190,7 +190,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="album:" destination="Ggg-rE-pob" eventType="touchUpInside" id="8Mk-L2-34Z"/>
-                                    <action selector="album:" destination="8oc-tM-OdY" eventType="touchUpInside" id="gyT-h4-cKA"/>
+                                    <action selector="album:" destination="8oc-tM-OdY" eventType="touchUpInside" id="T6f-su-6Gf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q1G-ij-bth">
@@ -209,7 +209,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="camara:" destination="8oc-tM-OdY" eventType="touchUpInside" id="NWM-UH-C9Q"/>
-                                    <action selector="ejecutarML:" destination="8oc-tM-OdY" eventType="touchUpInside" id="E4a-Qb-nXw"/>
+                                    <action selector="ejecutarML:" destination="8oc-tM-OdY" eventType="touchUpInside" id="9XJ-KB-pbg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selecciona una imagen con un" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAo-bc-KtA">
@@ -241,7 +241,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="guardarImg:" destination="8oc-tM-OdY" eventType="touchUpInside" id="0nX-Rr-ud4"/>
+                                    <action selector="guardarImg:" destination="8oc-tM-OdY" eventType="touchUpInside" id="sij-dz-Dti"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resultado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYy-Jw-qqc">
@@ -260,12 +260,16 @@
                                     <color key="titleColor" red="0.001661111112" green="0.58500555200000004" blue="0.0025773651350000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <color key="titleShadowColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.25716945530000002" green="0.57995426650000004" blue="0.3986228108" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="camara:" destination="8oc-tM-OdY" eventType="touchUpInside" id="Oof-2e-NfU"/>
                                     <action selector="guardarImg:" destination="8oc-tM-OdY" eventType="touchUpInside" id="q1Q-Vk-1TA"/>
                                 </connections>
                             </button>
@@ -275,9 +279,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="hH3-y3-ycp"/>
                     <connections>
-                        <outlet property="botonCamara" destination="yGT-bM-el0" id="BS6-U4-oeK"/>
-                        <outlet property="fotoVista" destination="fZk-lk-zyE" id="Fly-TR-wWT"/>
-                        <outlet property="resultadoML" destination="KYy-Jw-qqc" id="djz-qg-TQM"/>
+                        <outlet property="botonCamara" destination="yGT-bM-el0" id="AJa-y8-yEg"/>
+                        <outlet property="fotoVista" destination="fZk-lk-zyE" id="VzW-aq-TtB"/>
+                        <outlet property="resultadoML" destination="KYy-Jw-qqc" id="rFS-V9-bzd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mDg-c7-cYL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

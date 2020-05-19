@@ -13,7 +13,8 @@
 		1122AAC6244EAD5800F56CDF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1122AAC4244EAD5800F56CDF /* Main.storyboard */; };
 		1122AAC8244EAD5B00F56CDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1122AAC7244EAD5B00F56CDF /* Assets.xcassets */; };
 		1122AACB244EAD5B00F56CDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1122AAC9244EAD5B00F56CDF /* LaunchScreen.storyboard */; };
-		11468E1F2473689500366751 /* TestStudy.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 11468E1E2473689400366751 /* TestStudy.mlmodel */; };
+		11468E212473761100366751 /* ProyectoSG.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 11468E202473761100366751 /* ProyectoSG.mlmodel */; };
+		11468E2524737D1A00366751 /* ExploraObjetosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11468E2424737D1A00366751 /* ExploraObjetosViewController.swift */; };
 		9B162AA7246C52610069D3C0 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B162AA6246C52600069D3C0 /* mapViewController.swift */; };
 		9B162AA9246CA0F80069D3C0 /* treeMarkersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B162AA8246CA0F80069D3C0 /* treeMarkersController.swift */; };
 		A725A965246B8BCE00F0BA71 /* MateriasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A725A964246B8BCE00F0BA71 /* MateriasViewController.swift */; };
@@ -29,7 +30,8 @@
 		1122AAC7244EAD5B00F56CDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1122AACA244EAD5B00F56CDF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1122AACC244EAD5B00F56CDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		11468E1E2473689400366751 /* TestStudy.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TestStudy.mlmodel; sourceTree = "<group>"; };
+		11468E202473761100366751 /* ProyectoSG.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = ProyectoSG.mlmodel; sourceTree = "<group>"; };
+		11468E2424737D1A00366751 /* ExploraObjetosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploraObjetosViewController.swift; sourceTree = "<group>"; };
 		9B162AA6246C52600069D3C0 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		9B162AA8246CA0F80069D3C0 /* treeMarkersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = treeMarkersController.swift; sourceTree = "<group>"; };
 		A725A964246B8BCE00F0BA71 /* MateriasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateriasViewController.swift; sourceTree = "<group>"; };
@@ -71,13 +73,14 @@
 				1122AAC2244EAD5800F56CDF /* ViewController.swift */,
 				1122AAC4244EAD5800F56CDF /* Main.storyboard */,
 				1122AAC7244EAD5B00F56CDF /* Assets.xcassets */,
+				11468E202473761100366751 /* ProyectoSG.mlmodel */,
 				1122AAC9244EAD5B00F56CDF /* LaunchScreen.storyboard */,
-				11468E1E2473689400366751 /* TestStudy.mlmodel */,
 				1122AACC244EAD5B00F56CDF /* Info.plist */,
 				A725A964246B8BCE00F0BA71 /* MateriasViewController.swift */,
 				A7CD255C246CD57600748D64 /* MateriaRegistradaViewController.swift */,
 				9B162AA6246C52600069D3C0 /* mapViewController.swift */,
 				9B162AA8246CA0F80069D3C0 /* treeMarkersController.swift */,
+				11468E2424737D1A00366751 /* ExploraObjetosViewController.swift */,
 			);
 			path = StudyGarden;
 			sourceTree = "<group>";
@@ -154,13 +157,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A725A965246B8BCE00F0BA71 /* MateriasViewController.swift in Sources */,
+				11468E2524737D1A00366751 /* ExploraObjetosViewController.swift in Sources */,
 				9B162AA9246CA0F80069D3C0 /* treeMarkersController.swift in Sources */,
-				11468E1F2473689500366751 /* TestStudy.mlmodel in Sources */,
 				A7CD255D246CD57600748D64 /* MateriaRegistradaViewController.swift in Sources */,
 				9B162AA7246C52610069D3C0 /* mapViewController.swift in Sources */,
 				1122AAC3244EAD5800F56CDF /* ViewController.swift in Sources */,
 				1122AABF244EAD5800F56CDF /* AppDelegate.swift in Sources */,
 				1122AAC1244EAD5800F56CDF /* SceneDelegate.swift in Sources */,
+				11468E212473761100366751 /* ProyectoSG.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
