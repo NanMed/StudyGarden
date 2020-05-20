@@ -54,7 +54,7 @@ class ExploraObjetosViewController: UIViewController, UIImagePickerControllerDel
         picker.dismiss(animated: true, completion: nil)
     }
     
-    @IBAction func ejecutarML() {
+    @IBAction func ejecML(_ sender: Any) {
         //print("aqui")
         //instanciar el modelo de la red neuronal
         let modelFile = ProyectoSG()
@@ -84,7 +84,7 @@ class ExploraObjetosViewController: UIViewController, UIImagePickerControllerDel
                 bestPrediction = classification.identifier
             }
         }
-        let resultado = bestPrediction+" "+String(bestConfidence)
+        let resultado = bestPrediction
         print(resultado)
         resultadoML.text = resultado
     }
