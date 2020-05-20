@@ -85,7 +85,7 @@ class ExploraObjetosViewController: UIViewController, UIImagePickerControllerDel
             }
         }
         let resultado = bestPrediction
-        print(resultado)
+        //print(resultado)
         resultadoML.text = resultado
     }
 }
