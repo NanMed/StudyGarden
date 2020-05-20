@@ -34,9 +34,9 @@ class TreeAnnotations: NSObject {
     
     override init(){
        //build an array of pizza loactions literally
-        restaurants = [TreeAnnotation(19.3573267,-99.2699144, title: "Árbol Uno", subtitle:"Programación Avanzada", type: .progra)]
-        restaurants += [TreeAnnotation(19.3571990,-99.2698775, title: "Árbol Dos", subtitle:"Calidad y Pruebas", type: .calidad)]
-        restaurants += [TreeAnnotation(19.3571528,-99.2697883, title: "Árbol tres", subtitle:"AMSS", type: .amss)]
+        restaurants = [TreeAnnotation(19.3573267,-99.2699144, title: "Programación Avanzada", subtitle:"50%", type: .progra)]
+        restaurants += [TreeAnnotation(19.3571990,-99.2698775, title: "Calidad y Pruebas", subtitle:"60%", type: .calidad)]
+        restaurants += [TreeAnnotation(19.3571528,-99.2697883, title: "AMSS", subtitle:"45%", type: .amss)]
        
         
     }
