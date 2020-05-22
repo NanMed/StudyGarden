@@ -10,6 +10,17 @@ import UIKit
 
 class Canvas: UIView{
     
+    fileprivate var strokeColor = UIColor.black
+    fileprivate var strokeWidth: Float = 1
+    
+    func setStrokeWidth(width: Float) {
+        self.strokeWidth = width
+    }
+    
+    func setStrokecolor(color:UIColor){
+        self.strokeColor = color
+    }
+    
     func undo() {
         _ = lines.popLast()
         setNeedsDisplay()
@@ -20,34 +31,29 @@ class Canvas: UIView{
         setNeedsDisplay()
     }
     
-     fileprivate var lines = [[CGPoint]]()
+    fileprivate var lines = [Line]()
     
     override func draw(_rect: CGRect){
         super.draw(rect)
         
         guard let context = UIGraphicsGetCurrentContext() else{return}
+
         
-//        let startPoint = CGPoint(x:0, y:0)
-//        let endPoint = CGPoint(x:100, y:100)
-//        context.move(to:startPoint)
-//        context.addLine(to: endPoint)
-        
-        context.setStrokeColor(UIColor.red.cgColor)
-        context.setLineWidth(10)
         context.setLineCap(.butt)
         
-        lines.forEach{(line) in
-            for(i,p) in line.enumerated(){
+        lines.forEach { (line) in
+            context.setStrokeColor(line.color.cgColor)
+            context.setLineWidth(CGFloat(line.strokeWidth))
+            context.setLineCap(.round)
+            for(i,p) in line.points.enumerated(){
                 if i = 0 {
                     context.move(to:p)
                 }else{
                     context.addLine(to: p)
                 }
             }
+            context.strokePath()
         }
-        
-        
-        context.strokePath()
         
         
     }
@@ -55,7 +61,7 @@ class Canvas: UIView{
     //var line = [CGPoint]()
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        lines.append([CGPoint]())
+        lines.append(Line.init(strokeWidth: strokeWidth, color: strokeColor, points: []))
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -64,13 +70,8 @@ class Canvas: UIView{
         //print(point)
         
         guard var latLine = line.popLast() else {return}
-        lastLine.append(point)
+        lastLine.points.append(point)
         lines.append(lastLine)
-        
-//        let lastLine = lines.last
-//        lastLine?.append(point)
-        
-        //line.append(point)
         setNeedsDisplay()
         
     }

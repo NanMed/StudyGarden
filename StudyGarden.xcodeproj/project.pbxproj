@@ -22,6 +22,7 @@
 		9B162AA7246C52610069D3C0 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B162AA6246C52600069D3C0 /* mapViewController.swift */; };
 		9B162AA9246CA0F80069D3C0 /* treeMarkersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B162AA8246CA0F80069D3C0 /* treeMarkersController.swift */; };
 		A725A965246B8BCE00F0BA71 /* MateriasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A725A964246B8BCE00F0BA71 /* MateriasViewController.swift */; };
+		A74A2E9E2477AB93004EA57F /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74A2E9D2477AB93004EA57F /* Line.swift */; };
 		A76F0434247632AA005BF7FD /* JuegoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F0433247632AA005BF7FD /* JuegoViewController.swift */; };
 		A76F0437247640D3005BF7FD /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F0436247640D3005BF7FD /* Canvas.swift */; };
 		A7CD255D246CD57600748D64 /* MateriaRegistradaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CD255C246CD57600748D64 /* MateriaRegistradaViewController.swift */; };
@@ -47,6 +48,7 @@
 		9B162AA8246CA0F80069D3C0 /* treeMarkersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = treeMarkersController.swift; sourceTree = "<group>"; };
 		A20586BF4D129CF3CE31DA10 /* Pods-StudyGarden.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyGarden.release.xcconfig"; path = "Target Support Files/Pods-StudyGarden/Pods-StudyGarden.release.xcconfig"; sourceTree = "<group>"; };
 		A725A964246B8BCE00F0BA71 /* MateriasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateriasViewController.swift; sourceTree = "<group>"; };
+		A74A2E9D2477AB93004EA57F /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
 		A76F0433247632AA005BF7FD /* JuegoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegoViewController.swift; sourceTree = "<group>"; };
 		A76F0436247640D3005BF7FD /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
 		A7CD255C246CD57600748D64 /* MateriaRegistradaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateriaRegistradaViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		1122AABD244EAD5800F56CDF /* StudyGarden */ = {
 			isa = PBXGroup;
 			children = (
+				A74A2E9C2477AB73004EA57F /* Models */,
 				A76F0435247640B6005BF7FD /* Views */,
 				11468E2C2476239500366751 /* StudyGarden.entitlements */,
 				1122AABE244EAD5800F56CDF /* AppDelegate.swift */,
@@ -124,6 +127,14 @@
 				F91D7B1CFD1FCA96841B8BB8 /* Pods_StudyGarden.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A74A2E9C2477AB73004EA57F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A74A2E9D2477AB93004EA57F /* Line.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A76F0435247640B6005BF7FD /* Views */ = {
@@ -255,6 +266,7 @@
 				11468E2524737D1A00366751 /* ExploraObjetosViewController.swift in Sources */,
 				9B162AA9246CA0F80069D3C0 /* treeMarkersController.swift in Sources */,
 				A7CD255D246CD57600748D64 /* MateriaRegistradaViewController.swift in Sources */,
+				A74A2E9E2477AB93004EA57F /* Line.swift in Sources */,
 				9B162AA7246C52610069D3C0 /* mapViewController.swift in Sources */,
 				A76F0434247632AA005BF7FD /* JuegoViewController.swift in Sources */,
 				11468E292475BEFF00366751 /* LogIn.swift in Sources */,
