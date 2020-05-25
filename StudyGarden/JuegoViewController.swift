@@ -65,13 +65,13 @@ class JuegoViewController: UIViewController {
         canvas.setStrokecolor(color:button.backgroundColor ?? .black)
     }
 
-    let slider = UISlider = {
+    let slider: UISlider = {
         let slider = UISlider()
         slider.minimumValue = 1
         slider.maximumValue = 10
         slider.addTarget(self, action: #selector(handleSliderChange), for: .valueChanged)
         return slider
-    }
+    }()
     
     @objc fileprivate func handleSliderChange(){
         canvas.setStrokeWidth(width: slider.value)
@@ -107,10 +107,10 @@ class JuegoViewController: UIViewController {
         stackView.distribution = .fillEqually
         
         view.addSubview(stackView)
-        stackView.translateAutoresizingMaskIntoConstraints = false
+        stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.leadingAnchor.constraint(equalTo:
             view.leadingAnchor).isActive = true
-        stackView.bottomAnchor.constraint(equalto:
+        stackView.bottomAnchor.constraint(equalTo:
             view.safeAreaLayoutGuide.bottomAnchor).isActive = true
         stackView.trailingAnchor.constraint(equalTo:
             view.trailingAnchor, constant: -8).isActive = true

@@ -33,7 +33,7 @@ class Canvas: UIView{
     
     fileprivate var lines = [Line]()
     
-    override func draw(_rect: CGRect){
+    override func draw(_ rect: CGRect){
         super.draw(rect)
         
         guard let context = UIGraphicsGetCurrentContext() else{return}
@@ -46,7 +46,7 @@ class Canvas: UIView{
             context.setLineWidth(CGFloat(line.strokeWidth))
             context.setLineCap(.round)
             for(i,p) in line.points.enumerated(){
-                if i = 0 {
+                if i == 0 {
                     context.move(to:p)
                 }else{
                     context.addLine(to: p)
@@ -69,7 +69,8 @@ class Canvas: UIView{
         guard let point = touches.first?.location(in:nil) else {return}
         //print(point)
         
-        guard var latLine = line.popLast() else {return}
+        guard var lastLine = lines.popLast() else {return}
+        //Tengo duda si es points o point
         lastLine.points.append(point)
         lines.append(lastLine)
         setNeedsDisplay()
