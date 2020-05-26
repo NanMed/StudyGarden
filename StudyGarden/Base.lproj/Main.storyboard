@@ -55,7 +55,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNe-pk-zsZ">
-                                <rect key="frame" x="76" y="699" width="277" height="56"/>
+                                <rect key="frame" x="76" y="736" width="277" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.12941176469999999" green="0.57647058819999997" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -121,7 +121,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ejS-QR-8dv">
-                                <rect key="frame" x="76" y="614" width="277" height="55"/>
+                                <rect key="frame" x="76" y="651" width="277" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.64295202490000003" blue="0.47099572420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
@@ -137,6 +137,13 @@
                                     <action selector="logIn:" destination="VvD-fJ-MCE" eventType="touchUpInside" id="esk-CF-oMO"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mensaje error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V7y-Tf-2aa">
+                                <rect key="frame" x="76" y="595" width="277" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.31018814672848871" blue="0.36925553527228361" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Elo-Zh-YiN"/>
@@ -144,6 +151,7 @@
                     <navigationItem key="navigationItem" id="kY4-X3-E2l"/>
                     <connections>
                         <outlet property="correoText" destination="km7-5F-1r4" id="m0C-6T-MRF"/>
+                        <outlet property="mensajeError" destination="V7y-Tf-2aa" id="H2B-t2-CTK"/>
                         <outlet property="passText" destination="Mbd-E4-mpO" id="SsG-rK-5e7"/>
                         <segue destination="oEa-cA-68F" kind="push" identifier="goLogIn" id="p7e-wk-ixV"/>
                     </connections>
