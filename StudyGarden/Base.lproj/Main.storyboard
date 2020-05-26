@@ -46,6 +46,76 @@
             </objects>
             <point key="canvasLocation" x="1221.7391304347827" y="498.88392857142856"/>
         </scene>
+        <!--Musica Controller-->
+        <scene sceneID="9fk-lb-kn1">
+            <objects>
+                <viewController id="bT6-gx-cti" customClass="MusicaController" customModule="StudyGarden" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gQc-j3-J2T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcL-Lv-EmO">
+                                <rect key="frame" x="76" y="806" width="48" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.25716945530000002" green="0.57995426650000004" blue="0.3986228108" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.45100525609999997" green="0.78085342639999999" blue="0.35686197250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="play.fill" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="play:" destination="bT6-gx-cti" eventType="touchUpInside" id="G3u-Aq-hp4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selecciona una imagen y dale play" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UKX-BG-f5S">
+                                <rect key="frame" x="76" y="106" width="262" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k7g-TU-NDY">
+                                <rect key="frame" x="140" y="135" width="135" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Seleccionar imagen"/>
+                                <connections>
+                                    <action selector="selImgAlbum:" destination="bT6-gx-cti" eventType="touchUpInside" id="Psq-s1-BmQ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5rh-eo-PBO">
+                                <rect key="frame" x="20" y="222" width="374" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GrP-jW-bWT">
+                                <rect key="frame" x="289" y="806" width="49" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.25716945530000002" green="0.57995426650000004" blue="0.3986228108" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.45100525609999997" green="0.78085342639999999" blue="0.35686197250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="pause.fill" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pausa:" destination="bT6-gx-cti" eventType="touchUpInside" id="V3M-nE-0RI"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="eAG-d4-VCX"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bwL-1e-bW3"/>
+                    <connections>
+                        <outlet property="imgSeleccionada" destination="5rh-eo-PBO" id="kEk-7d-YAn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iuB-qc-GCZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5298.5507246376819" y="1794.6428571428571"/>
+        </scene>
         <!--Registro-->
         <scene sceneID="Yop-Eg-tW3">
             <objects>
@@ -604,7 +674,7 @@
                                 <rect key="frame" x="66" y="203" width="291" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="WGc-ds-ocL" kind="show" id="W8V-wy-6mR"/>
+                                    <segue destination="bT6-gx-cti" kind="show" id="YiF-Jz-Kpz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmZ-j5-Ty5">
@@ -724,7 +794,7 @@
             <objects>
                 <viewController title="PaisajesVR2" id="00j-0X-XLe" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i1n-e1-GbQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sg8" translatesAutoresizingMaskIntoConstraints="NO" id="owa-yM-5Lq">
@@ -1322,6 +1392,8 @@
         <image name="logoFacebook" width="600" height="600"/>
         <image name="map" catalog="system" width="128" height="113"/>
         <image name="map.fill" catalog="system" width="128" height="113"/>
+        <image name="pause.fill" catalog="system" width="116" height="128"/>
+        <image name="play.fill" catalog="system" width="116" height="128"/>
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <image name="sg1" width="400" height="828"/>
         <image name="sg2" width="395" height="807"/>

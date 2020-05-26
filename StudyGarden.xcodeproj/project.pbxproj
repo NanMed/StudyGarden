@@ -18,6 +18,8 @@
 		11468E272475B9AA00366751 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11468E262475B9AA00366751 /* GoogleService-Info.plist */; };
 		11468E292475BEFF00366751 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11468E282475BEFF00366751 /* LogIn.swift */; };
 		11468E2B2475CFD800366751 /* ResgistrarUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11468E2A2475CFD800366751 /* ResgistrarUsuario.swift */; };
+		11C3AB27247CBCF000B61565 /* MusicaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C3AB26247CBCF000B61565 /* MusicaController.swift */; };
+		11C3AB29247CC12700B61565 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 11C3AB28247CC12600B61565 /* song.mp3 */; };
 		5922D9EC60D1870B4C71237E /* Pods_StudyGarden.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91D7B1CFD1FCA96841B8BB8 /* Pods_StudyGarden.framework */; };
 		9B162AA7246C52610069D3C0 /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B162AA6246C52600069D3C0 /* mapViewController.swift */; };
 		9B162AA9246CA0F80069D3C0 /* treeMarkersController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B162AA8246CA0F80069D3C0 /* treeMarkersController.swift */; };
@@ -43,6 +45,8 @@
 		11468E282475BEFF00366751 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		11468E2A2475CFD800366751 /* ResgistrarUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResgistrarUsuario.swift; sourceTree = "<group>"; };
 		11468E2C2476239500366751 /* StudyGarden.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StudyGarden.entitlements; sourceTree = "<group>"; };
+		11C3AB26247CBCF000B61565 /* MusicaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaController.swift; sourceTree = "<group>"; };
+		11C3AB28247CC12600B61565 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = song.mp3; path = ../../../../Downloads/song.mp3; sourceTree = "<group>"; };
 		7496F8D7FDE1E931FC877382 /* Pods-StudyGarden.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyGarden.debug.xcconfig"; path = "Target Support Files/Pods-StudyGarden/Pods-StudyGarden.debug.xcconfig"; sourceTree = "<group>"; };
 		9B162AA6246C52600069D3C0 /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
 		9B162AA8246CA0F80069D3C0 /* treeMarkersController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = treeMarkersController.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				11468E262475B9AA00366751 /* GoogleService-Info.plist */,
 				11468E282475BEFF00366751 /* LogIn.swift */,
 				11468E2A2475CFD800366751 /* ResgistrarUsuario.swift */,
+				11C3AB26247CBCF000B61565 /* MusicaController.swift */,
+				11C3AB28247CC12600B61565 /* song.mp3 */,
 			);
 			path = StudyGarden;
 			sourceTree = "<group>";
@@ -206,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1122AACB244EAD5B00F56CDF /* LaunchScreen.storyboard in Resources */,
+				11C3AB29247CC12700B61565 /* song.mp3 in Resources */,
 				11468E272475B9AA00366751 /* GoogleService-Info.plist in Resources */,
 				1122AAC8244EAD5B00F56CDF /* Assets.xcassets in Resources */,
 				1122AAC6244EAD5800F56CDF /* Main.storyboard in Resources */,
@@ -270,6 +277,7 @@
 				9B162AA7246C52610069D3C0 /* mapViewController.swift in Sources */,
 				A76F0434247632AA005BF7FD /* JuegoViewController.swift in Sources */,
 				11468E292475BEFF00366751 /* LogIn.swift in Sources */,
+				11C3AB27247CBCF000B61565 /* MusicaController.swift in Sources */,
 				1122AAC3244EAD5800F56CDF /* ViewController.swift in Sources */,
 				11468E2B2475CFD800366751 /* ResgistrarUsuario.swift in Sources */,
 				1122AABF244EAD5800F56CDF /* AppDelegate.swift in Sources */,
