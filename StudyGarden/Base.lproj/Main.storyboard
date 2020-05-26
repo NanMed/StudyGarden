@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bb4-6c-Umd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bb4-6c-Umd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -666,36 +666,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sg1" translatesAutoresizingMaskIntoConstraints="NO" id="FDv-Ek-MGV">
-                                <rect key="frame" x="7" y="54" width="400" height="828"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDJ-XY-LNw">
-                                <rect key="frame" x="66" y="203" width="291" height="47"/>
+                                <rect key="frame" x="66" y="203" width="291" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.64295202490000003" blue="0.47099572420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Musica y Paisajes">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="bT6-gx-cti" kind="show" id="YiF-Jz-Kpz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmZ-j5-Ty5">
-                                <rect key="frame" x="66" y="288" width="291" height="51"/>
+                                <rect key="frame" x="66" y="315" width="291" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.64295202490000003" blue="0.47099572420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Revisa tu arbol">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <segue destination="ReI-4n-xu6" kind="show" id="lU7-1N-q4z"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gss-Ds-eiC">
-                                <rect key="frame" x="66" y="384" width="285" height="52"/>
+                                <rect key="frame" x="66" y="430" width="291" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.64295202490000003" blue="0.47099572420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Dibuja">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <segue destination="8jf-Bd-TvT" kind="show" id="eiq-tG-WTr"/>
+                                    <segue destination="9Iz-cA-QtO" kind="show" id="Dy7-Og-1Zu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ivq-ol-Cxr">
-                                <rect key="frame" x="65" y="476" width="280" height="55"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y9C-Xy-TgQ">
+                                <rect key="frame" x="66" y="542" width="291" height="77"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.64295202490000003" blue="0.47099572420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Cuida tu planta">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
-                                    <segue destination="9Iz-cA-QtO" kind="show" id="lYs-lH-brB"/>
+                                    <segue destination="8jf-Bd-TvT" kind="show" id="RS6-8j-EFL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -714,7 +732,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TFh-nq-RWj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4897" y="1077"/>
+            <point key="canvasLocation" x="4895.652173913044" y="1076.7857142857142"/>
         </scene>
         <!--Juego1-->
         <scene sceneID="x0g-XQ-Bsg">
@@ -736,21 +754,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ySE-bQ-B9I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5693" y="1077"/>
+            <point key="canvasLocation" x="5590" y="1077"/>
         </scene>
         <!--Juego2-->
         <scene sceneID="tzw-81-2i9">
             <objects>
-                <viewController title="Juego2" id="9Iz-cA-QtO" sceneMemberID="viewController">
+                <viewController title="Juego2" id="9Iz-cA-QtO" customClass="JuegoViewController" customModule="StudyGarden" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zHt-Gr-eO5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="sg3" translatesAutoresizingMaskIntoConstraints="NO" id="gvM-hb-POk">
-                                <rect key="frame" x="10" y="56" width="394" height="806"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="7YX-fc-du4"/>
                     </view>
@@ -758,7 +770,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RqQ-VG-Edz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6317" y="1077"/>
+            <point key="canvasLocation" x="6315.9420289855079" y="1076.7857142857142"/>
         </scene>
         <!--PaisajesVR1-->
         <scene sceneID="XRh-kd-2IM">
@@ -1395,9 +1407,7 @@
         <image name="pause.fill" catalog="system" width="116" height="128"/>
         <image name="play.fill" catalog="system" width="116" height="128"/>
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
-        <image name="sg1" width="400" height="828"/>
         <image name="sg2" width="395" height="807"/>
-        <image name="sg3" width="394" height="806"/>
         <image name="sg4" width="403" height="823"/>
         <image name="sg5" width="389" height="820"/>
         <image name="sg7" width="401" height="805"/>
