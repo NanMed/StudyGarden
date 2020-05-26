@@ -12,15 +12,17 @@ import AVFoundation
 class MusicaController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     
+    @IBOutlet weak var textoRel: UILabel!
     @IBOutlet weak var imgSeleccionada: UIImageView!
     
-    var audioPlayer = AVAudioPlayer()
+    var audioPlayer: AVAudioPlayer!
     private let pickerImg = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        textoRel.isHidden = true
         let sound = Bundle.main.path(forResource: "song", ofType: "mp3")
         
         do{
@@ -29,21 +31,27 @@ class MusicaController: UIViewController, UIImagePickerControllerDelegate, UINav
         } catch {
             print(error)
         }
+        
     }
     
-
-    @IBAction func selImgAlbum(_ sender: Any) {
-        pickerImg.sourceType = UIImagePickerController.SourceType.photoLibrary
-        present(pickerImg, animated: true, completion: nil)
+    @IBAction func cambiar(_ sender: Any) {
+        textoRel.isHidden = false
+        imgSeleccionada.image = UIImage(named: "paisaje1")
     }
     
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        imgSeleccionada.image = info[UIImagePickerControllerOriginalImage] as? UIImage
-        picker.dismiss(animated: true, completion: nil)
+    @IBAction func cambiarP2(_ sender: Any) {
+        textoRel.isHidden = false
+        imgSeleccionada.image = UIImage(named: "paisaje2")
     }
     
-    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
-        picker.dismiss(animated: true, completion: nil)
+    @IBAction func cambiarP3(_ sender: Any) {
+        textoRel.isHidden = false
+        imgSeleccionada.image = UIImage(named: "paisaje3")
+    }
+    
+    @IBAction func cambiarP4(_ sender: Any) {
+        textoRel.isHidden = false
+        imgSeleccionada.image = UIImage(named: "paisaje4")
     }
     
     @IBAction func play(_ sender: Any) {
