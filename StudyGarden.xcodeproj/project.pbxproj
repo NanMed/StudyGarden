@@ -19,6 +19,7 @@
 		11468E292475BEFF00366751 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11468E282475BEFF00366751 /* LogIn.swift */; };
 		11468E2B2475CFD800366751 /* ResgistrarUsuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11468E2A2475CFD800366751 /* ResgistrarUsuario.swift */; };
 		11BFADCE247F20FE00DCF889 /* PonderacionRegistro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BFADCD247F20FE00DCF889 /* PonderacionRegistro.swift */; };
+		11BFADD2247F723100DCF889 /* ResultadoRegistroMateria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BFADD1247F723100DCF889 /* ResultadoRegistroMateria.swift */; };
 		11C3AB27247CBCF000B61565 /* MusicaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C3AB26247CBCF000B61565 /* MusicaController.swift */; };
 		11C3AB2B247CE8EA00B61565 /* song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 11C3AB2A247CE8EA00B61565 /* song.mp3 */; };
 		5922D9EC60D1870B4C71237E /* Pods_StudyGarden.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F91D7B1CFD1FCA96841B8BB8 /* Pods_StudyGarden.framework */; };
@@ -47,6 +48,7 @@
 		11468E2A2475CFD800366751 /* ResgistrarUsuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResgistrarUsuario.swift; sourceTree = "<group>"; };
 		11468E2C2476239500366751 /* StudyGarden.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StudyGarden.entitlements; sourceTree = "<group>"; };
 		11BFADCD247F20FE00DCF889 /* PonderacionRegistro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PonderacionRegistro.swift; sourceTree = "<group>"; };
+		11BFADD1247F723100DCF889 /* ResultadoRegistroMateria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadoRegistroMateria.swift; sourceTree = "<group>"; };
 		11C3AB26247CBCF000B61565 /* MusicaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicaController.swift; sourceTree = "<group>"; };
 		11C3AB2A247CE8EA00B61565 /* song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song.mp3; sourceTree = "<group>"; };
 		7496F8D7FDE1E931FC877382 /* Pods-StudyGarden.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudyGarden.debug.xcconfig"; path = "Target Support Files/Pods-StudyGarden/Pods-StudyGarden.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				11468E2A2475CFD800366751 /* ResgistrarUsuario.swift */,
 				11C3AB26247CBCF000B61565 /* MusicaController.swift */,
 				11BFADCD247F20FE00DCF889 /* PonderacionRegistro.swift */,
+				11BFADD1247F723100DCF889 /* ResultadoRegistroMateria.swift */,
 			);
 			path = StudyGarden;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				11C3AB27247CBCF000B61565 /* MusicaController.swift in Sources */,
 				1122AAC3244EAD5800F56CDF /* ViewController.swift in Sources */,
 				11468E2B2475CFD800366751 /* ResgistrarUsuario.swift in Sources */,
+				11BFADD2247F723100DCF889 /* ResultadoRegistroMateria.swift in Sources */,
 				1122AABF244EAD5800F56CDF /* AppDelegate.swift in Sources */,
 				1122AAC1244EAD5800F56CDF /* SceneDelegate.swift in Sources */,
 				11468E212473761100366751 /* ProyectoSG.mlmodel in Sources */,

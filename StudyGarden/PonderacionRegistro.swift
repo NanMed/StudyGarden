@@ -13,6 +13,7 @@ import FirebaseDatabase
 class PonderacionRegistro: UIViewController {
 
     var materia:String = ""
+    var regMateria:String = "Materia"
     
     @IBOutlet weak var materiaLabel: UILabel!
     
@@ -50,13 +51,24 @@ class PonderacionRegistro: UIViewController {
         materiaLabel.text = materia
         // Do any additional setup after loading the view.
     }
-    
+
     @IBAction func registrarDatos(_ sender: UIButton) {
         //Para la identificación del path se utilizará el User Id del usuario actual
         let userid = Auth.auth().currentUser?.uid
          //Obtener el texto introducido por el usuario
          //Hace falta verificar que el texto no sea nulo
         let materiaRegistro:String = self.materiaLabel.text!
+        print(materiaRegistro)
+        if(materiaRegistro.elementsEqual("AMMS")){
+            regMateria = "Materia1"
+        } else if (materiaRegistro.elementsEqual("Bases de Datos")){
+            regMateria = "Materia2"
+        } else if (materiaRegistro.elementsEqual("Dispositivos Móviles")){
+            regMateria = "Materia3"
+        } else if (materiaRegistro.elementsEqual("Programación Avanzada")){
+            regMateria = "Materia4"
+        }
+        
         let e1:String = self.eval1.text!
         let p1:String = self.pond1.text!
         let e11:String = self.eval11.text!
@@ -82,14 +94,14 @@ class PonderacionRegistro: UIViewController {
         let e5:String = self.eval5.text!
         let p5:String = self.pond5.text!
         //Relizar la actualización en la BD
-        ref.child("Usuarios/"+userid!).updateChildValues(["Materia":materiaRegistro])
-        ref.child("Usuarios/"+userid!).child("Materia").updateChildValues(["Evaluacion1":e1, "Ponderacion1":p1, "Evaluacion2":e2, "Ponderacion2":p2, "Evaluacion3":e3, "Ponderacion3":p3, "Evaluacion4":e4, "Ponderacion4":p4, "Evaluacion5":e5, "Ponderacion5":p5])
+        //ref.child("Usuarios/"+userid!).updateChildValues(["Materia":materiaRegistro])
+        ref.child("Usuarios/"+userid!).child(regMateria).updateChildValues(["Materia":materiaRegistro, "Evaluacion1":e1, "Ponderacion1":p1, "Evaluacion2":e2, "Ponderacion2":p2, "Evaluacion3":e3, "Ponderacion3":p3, "Evaluacion4":e4, "Ponderacion4":p4, "Evaluacion5":e5, "Ponderacion5":p5])
         
-        ref.child("Usuarios/"+userid!).child("Materia").child("Evaluacion1").updateChildValues(["Eval1":e11, "Ponde1":p11, "Eval2":e12, "Ponde2":p12, "Eval3":e13, "Ponde3":p13])
+        ref.child("Usuarios/"+userid!).child(regMateria).child("Evaluacion1").updateChildValues(["Eval1":e11, "Ponde1":p11, "Eval2":e12, "Ponde2":p12, "Eval3":e13, "Ponde3":p13])
         
-        ref.child("Usuarios/"+userid!).child("Materia").child("Evaluacion2").updateChildValues(["Eval1":e21, "Ponde1":p21, "Eval2":e22, "Ponde2":p22, "Eval3":e23, "Ponde3":p23])
+        ref.child("Usuarios/"+userid!).child(regMateria).child("Evaluacion2").updateChildValues(["Eval1":e21, "Ponde1":p21, "Eval2":e22, "Ponde2":p22, "Eval3":e23, "Ponde3":p23])
          //Notificar al usuario que la actualización fue exitosa
-        let alert = UIAlertController(title: "Guardar", message: "Los datos se almacenaron exitosamente", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Datos guardados", message: "Los datos se almacenaron exitosamente", preferredStyle: .alert)
          
         alert.addAction(UIAlertAction(title: "Continuar", style: .default, handler: nil))
          
