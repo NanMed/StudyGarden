@@ -97,15 +97,24 @@ class PonderacionRegistro: UIViewController {
         //ref.child("Usuarios/"+userid!).updateChildValues(["Materia":materiaRegistro])
         ref.child("Usuarios/"+userid!).child(regMateria).updateChildValues(["Materia":materiaRegistro, "Evaluacion1":e1, "Ponderacion1":p1, "Evaluacion2":e2, "Ponderacion2":p2, "Evaluacion3":e3, "Ponderacion3":p3, "Evaluacion4":e4, "Ponderacion4":p4, "Evaluacion5":e5, "Ponderacion5":p5])
         
-        ref.child("Usuarios/"+userid!).child(regMateria).child("Evaluacion1").updateChildValues(["Eval1":e11, "Ponde1":p11, "Eval2":e12, "Ponde2":p12, "Eval3":e13, "Ponde3":p13])
+        ref.child("Usuarios/"+userid!).child(regMateria).child("Evaluacion1").updateChildValues(["Eval1":e11, "Ponde1":p11, "Eval2":e12, "Ponde2":p12, "Eval3":e13, "Ponde3":p13, "PromEval1": "0", "TotalEval1": "0"])
         
-        ref.child("Usuarios/"+userid!).child(regMateria).child("Evaluacion2").updateChildValues(["Eval1":e21, "Ponde1":p21, "Eval2":e22, "Ponde2":p22, "Eval3":e23, "Ponde3":p23])
+        ref.child("Usuarios/"+userid!).child(regMateria).child("Evaluacion2").updateChildValues(["Eval1":e21, "Ponde1":p21, "Eval2":e22, "Ponde2":p22, "Eval3":e23, "Ponde3":p23, "PromEval2": "0", "TotalEval2": "0"])
          //Notificar al usuario que la actualización fue exitosa
         let alert = UIAlertController(title: "Datos guardados", message: "Los datos se almacenaron exitosamente", preferredStyle: .alert)
          
         alert.addAction(UIAlertAction(title: "Continuar", style: .default, handler: nil))
          
         self.present(alert, animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+        let siguienteVista = segue.destination as! ResultadoRegistroMateria
+        siguienteVista.materiaReg = materia
+        siguienteVista.eval1 = eval1.text!
+        siguienteVista.eval2 = eval2.text!
     }
     
 }
