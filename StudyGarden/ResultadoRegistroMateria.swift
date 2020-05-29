@@ -12,8 +12,17 @@ import FirebaseDatabase
 
 class ResultadoRegistroMateria: UIViewController {
 
-    @IBOutlet weak var prueba: UILabel!
-    @IBOutlet weak var prueba2: UILabel!
+
+    @IBOutlet weak var materia: UILabel!
+    
+    @IBOutlet weak var eval1: UILabel!
+    @IBOutlet weak var eval1pon: UILabel!
+    @IBOutlet weak var eval11: UILabel!
+    @IBOutlet weak var eval11pon: UILabel!
+    @IBOutlet weak var eval12: UILabel!
+    @IBOutlet weak var eval12pon: UILabel!
+    @IBOutlet weak var eval13: UILabel!
+    @IBOutlet weak var eval13pon: UILabel!
     
     let ref = Database.database().reference()
     
@@ -26,17 +35,16 @@ class ResultadoRegistroMateria: UIViewController {
         //Para la identificación del path se utilizará el User Id del usuario actual
          let userid = Auth.auth().currentUser?.uid
         // El método .observeSingleEvent realiza una consulta puntual de los valores de los atributos hijos del path
-        ref.child("Usuarios").child(userid!).observeSingleEvent(of: .value){
+        ref.child("Usuarios").child(userid!).observeSingleEvent(of: .value, with: {
          (snapshot) in
-         let datos = snapshot.value as? [String:Any]
-            self.prueba.text = datos?["Materia"] as? String
-         }
+         let datos = snapshot.value as? NSDictionary
+            //self.materia.text = datos?["Materia"] as? String
+            self.eval11pon.text = datos?["Ponderacion1"] as? String ?? ""
+            
+         })
+
         
-        ref.child("Usuarios").child(userid!).child("Materia1").observeSingleEvent(of: .value){
-        (snapshot) in
-        let datos2 = snapshot.value as? [String:Any]
-           self.prueba2.text = datos2?["Materia"] as? String
-        }
+        
     }
     
 
