@@ -44,6 +44,10 @@ class ResultadoRegistroMateria: UIViewController {
     @IBOutlet weak var eval5: UILabel!
     @IBOutlet weak var pond5: UILabel!
     
+    @IBOutlet weak var prueba1: UILabel!
+    @IBOutlet weak var prueba2: UILabel!
+    var prueba3 = 0
+    
     let ref = Database.database().reference()
     
     override func viewDidLoad() {
@@ -51,7 +55,6 @@ class ResultadoRegistroMateria: UIViewController {
 
         // Do any additional setup after loading the view.
         /*lectura*/
-        print(materiaReg)
         if(materiaReg.elementsEqual("AMMS")){
             numMateria = "Materia1"
         } else if (materiaReg.elementsEqual("Bases de Datos")){
@@ -76,6 +79,7 @@ class ResultadoRegistroMateria: UIViewController {
             self.pond4.text = datos?["Ponderacion4"] as? String
             self.eval5.text = datos?["Evaluacion5"] as? String
             self.pond5.text = datos?["Ponderacion5"] as? String
+            self.prueba3 = (datos?["Prueba"] as? Int)!
          })
         ref.child("Usuarios").child(userid!).child(numMateria).child("Evaluacion1").observeSingleEvent(of: .value, with: {
         (snapshot) in
@@ -103,6 +107,23 @@ class ResultadoRegistroMateria: UIViewController {
         
     }
     
+    @IBAction func refresh(_ sender: Any) {
+        let num = prueba3
+        print(num)
+        let sum = num + 5
+        prueba2.text = String(sum)
+    }
+    
+    @IBAction func agregarEval1(_ sender: Any) {
+        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "RegistroCalificacion") as! RegistroCalificacionController
+        siguienteVista.eval1 = eval1
+        siguienteVista.materiaReg = materiaReg
+        siguienteVista.numEval = "Evaluacion1"
+        siguienteVista.varEval11 = eval11.text!
+        siguienteVista.varEval12 = eval12.text!
+        siguienteVista.varEval13 = eval13.text!
+        self.navigationController?.pushViewController(siguienteVista, animated: true)
+    }
     /*
     // MARK: - Navigation
 
