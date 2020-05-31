@@ -12,6 +12,7 @@ import FirebaseDatabase
 
 class RegistroCalificacionController: UIViewController {
 
+    //Varibales que recibo del otro view controller
     var eval1:String = ""
     var materiaReg:String = ""
     var numEval:String = ""
@@ -20,18 +21,15 @@ class RegistroCalificacionController: UIViewController {
     var varEval12:String = ""
     var varEval13:String = ""
     
-    var acumulado1:String = ""
-    var acumulado2:String = ""
-    var acumulado3:String = ""
+    //Variables para sacar los puntos obtenidos por la evcaluacion
+    var ponder1:Float = -1.0
+    var ponder2:Float = -1.0
+    var ponder3:Float = -1.0
+    var prom1:Float = -1.0
+    var prom2:Float = -1.0
+    var prom3:Float = -1.0
     
-    var ponde1:String = ""
-    var ponde2:String = ""
-    var ponde3:String = ""
-    
-    var act1:Int = 0
-    var ponder1:Int = 0
-    var total:Double = 0.0
-    
+    //Variables del diseño
     @IBOutlet weak var labelEval1: UILabel!
     @IBOutlet weak var evalHijo: UITextField!
     @IBOutlet weak var calificacion1: UITextField!
@@ -45,6 +43,12 @@ class RegistroCalificacionController: UIViewController {
     @IBOutlet weak var ponderacion1: UILabel!
     @IBOutlet weak var ponderacion2: UILabel!
     @IBOutlet weak var ponderacion3: UILabel!
+    
+    @IBOutlet weak var puntos1: UILabel!
+    @IBOutlet weak var puntos2: UILabel!
+    @IBOutlet weak var puntos3: UILabel!
+    @IBOutlet weak var totalPuntos: UILabel!
+    
     
     let ref = Database.database().reference()
     
@@ -85,7 +89,7 @@ class RegistroCalificacionController: UIViewController {
         
     }
     
-    @IBAction func totalEval(_ sender: Any) {
+    @IBAction func cargarInfo(_ sender: Any) {
         let userid = Auth.auth().currentUser?.uid
         if(materiaReg.elementsEqual("AMMS")){
             numMateria = "Materia1"
@@ -96,12 +100,11 @@ class RegistroCalificacionController: UIViewController {
         } else if (materiaReg.elementsEqual("Programación Avanzada")){
             numMateria = "Materia4"
         }
-        print(numMateria)
-        print(numEval)
+        
         ref.child("Usuarios").child(userid!).child(numMateria).child(numEval).observeSingleEvent(of: .value, with: {
         (snapshot) in
            let datos = snapshot.value as? [String:Any]
-            //self.promedio1.text = datos?["PromEval1"] as? String
+            self.promedio1.text = datos?["PromEval1"] as? String
             self.promedio2.text = datos?["PromEval2"] as? String
             self.promedio3.text = datos?["PromEval3"] as? String
             
@@ -109,30 +112,40 @@ class RegistroCalificacionController: UIViewController {
             self.ponderacion2.text = datos?["Ponde2"] as? String
             self.ponderacion3.text = datos?["Ponde3"] as? String
             
-            self.act1 = (self.promedio1.text! as NSString).integerValue
-            self.ponder1 = (self.ponderacion1.text! as NSString).integerValue
-            self.total = Double(self.act1 + self.ponder1)
-            print(self.total)
+            self.ponder1 = Float(self.ponderacion1.text!)!
+            self.ponder2 = Float(self.ponderacion2.text!)!
+            self.ponder3 = Float(self.ponderacion3.text!)!
+            self.prom1 = Float(self.promedio1.text!) ?? 0.0
+            self.prom2 = Float(self.promedio2.text!) ?? 0.0
+            self.prom3 = Float(self.promedio3.text!) ?? 0.0
         })
-        
-        //let myInt3 = (self.promedio1.text! as NSString).integerValue
-        //print(myInt3)
-        print("act1 \(act1)")
-        print("total \(total)")
-        //total = Double(act1 + ponder1)
-        //print(total)
-        //let ac1 = promedio1.text
-        //print(ac1 as Any)
-        //let ac2 = Double(promedio2.text!)
-        //let ac3 = Double(promedio3.text!)
-        //let pon1 = Int(ponderacion1.text!)
-        //print(pon1 ?? 0)
-        //let pon2 = Double(ponderacion2.text!)
-        //let pon3 = Double(ponderacion3.text!)
-        //let prueba:Double = Double(ac1! * (pon1!/100))
-        //print(prueba)
-        //let total:Float = ac1! * (pon1!/100) + ac2! * (pon2!/100) + ac3! * (pon3!/100)
-        //ref.child("Usuarios/"+userid!).child(numMateria).child(numEval).updateChildValues(["TotalEval1": prueba])
+    }
+    
+    
+    @IBAction func verResultados(_ sender: Any) {
+        let ac1 = Float(prom1 * (ponder1/100))
+        let ac2 = Float(prom2 * (ponder2/100))
+        let ac3 = Float(prom3 * (ponder3/100))
+        puntos1.text = String(ac1)
+        puntos2.text = String(ac2)
+        puntos3.text = String(ac3)
+        let suma = Float(ac1 + ac2 + ac3)
+        totalPuntos.text = String(suma)
+    }
+    
+    @IBAction func registarTotalEval(_ sender: Any) {
+        let userid = Auth.auth().currentUser?.uid
+        if(materiaReg.elementsEqual("AMMS")){
+            numMateria = "Materia1"
+        } else if (materiaReg.elementsEqual("Bases de Datos")){
+            numMateria = "Materia2"
+        } else if (materiaReg.elementsEqual("Dispositivos Móviles")){
+            numMateria = "Materia3"
+        } else if (materiaReg.elementsEqual("Programación Avanzada")){
+            numMateria = "Materia4"
+        }
+         let totalEval1:String = self.totalPuntos.text!
+        ref.child("Usuarios/"+userid!).child(numMateria).child(numEval).updateChildValues(["TotalEval": totalEval1])
     }
     /*
     // MARK: - Navigation
