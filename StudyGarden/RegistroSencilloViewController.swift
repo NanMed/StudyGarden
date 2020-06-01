@@ -7,16 +7,20 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class RegistroSencilloViewController: UIViewController {
     
     var varEval:String = ""
     var caliEval:String = ""
+    var regMateria:String = ""
 
     @IBOutlet weak var evaluacion: UILabel!
     
     @IBOutlet weak var calif: UITextField!
     
+    let ref = Database.database().reference()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +29,11 @@ class RegistroSencilloViewController: UIViewController {
     }
     
 
+    @IBAction func registrarCalisEval(_ sender: Any) {
+        let userid = Auth.auth().currentUser?.uid
+        let calEval:String = self.calif.text!
+        ref.child("Usuarios/"+userid!).child(regMateria).updateChildValues([caliEval: calEval])
+    }
     /*
     // MARK: - Navigation
 

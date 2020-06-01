@@ -94,7 +94,7 @@ class PonderacionRegistro: UIViewController {
         let e5:String = self.eval5.text!
         let p5:String = self.pond5.text!
         //Relizar la actualización en la BD
-        ref.child("Usuarios/"+userid!).child(regMateria).updateChildValues(["Materia":materiaRegistro, "Evaluacion1":e1, "Ponderacion1":p1, "Evaluacion2":e2, "Ponderacion2":p2, "Evaluacion3":e3, "Ponderacion3":p3, "Evaluacion4":e4, "Ponderacion4":p4, "Evaluacion5":e5, "Ponderacion5":p5, "TotalFinal": "0"])
+        ref.child("Usuarios/"+userid!).child(regMateria).updateChildValues(["Materia":materiaRegistro, "Evaluacion1":e1, "Ponderacion1":p1, "Evaluacion2":e2, "Ponderacion2":p2, "Evaluacion3":e3, "Ponderacion3":p3, "Evaluacion4":e4, "Ponderacion4":p4, "Evaluacion5":e5, "Ponderacion5":p5, "Calificacion3": "0", "Calificacion4": "0", "Calificacion5": "0", "TotalFinal": "0"])
         
         ref.child("Usuarios/"+userid!).child(regMateria).child("Evaluacion1").updateChildValues(["Eval1":e11, "Ponde1":p11, "Eval2":e12, "Ponde2":p12, "Eval3":e13, "Ponde3":p13, "PromEval1": "0", "PromEval2": "0", "PromEval3": "0", "TotalEval": "0"])
         

@@ -134,6 +134,7 @@ class ResultadoRegistroMateria: UIViewController {
          let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "RegistroSencillo") as! RegistroSencilloViewController
          siguienteVista.varEval = eval3.text!
         siguienteVista.caliEval = "Calificacion3"
+        siguienteVista.regMateria = materiaReg
         
         
     }
@@ -141,12 +142,16 @@ class ResultadoRegistroMateria: UIViewController {
     @IBAction func agregarEval4(_ sender: Any) {
          let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "RegistroSencillo") as! RegistroSencilloViewController
          siguienteVista.varEval = eval4.text!
+        siguienteVista.caliEval = "Calificacion4"
+        siguienteVista.regMateria = materiaReg
     }
     
     
     @IBAction func agregarEval5(_ sender: Any) {
          let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "RegistroSencillo") as! RegistroSencilloViewController
          siguienteVista.varEval = eval5.text!
+        siguienteVista.caliEval = "Calificacion5"
+        siguienteVista.regMateria = materiaReg
     }
     /*
     // MARK: - Navigation
