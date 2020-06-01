@@ -77,6 +77,7 @@ class ResultadoRegistroMateria: UIViewController {
             self.pond4.text = datos?["Ponderacion4"] as? String
             self.eval5.text = datos?["Evaluacion5"] as? String
             self.pond5.text = datos?["Ponderacion5"] as? String
+            self.promedioFinal.text = datos?["TotalFinal"] as? String
          })
         ref.child("Usuarios").child(userid!).child(numMateria).child("Evaluacion1").observeSingleEvent(of: .value, with: {
         (snapshot) in
@@ -114,6 +115,38 @@ class ResultadoRegistroMateria: UIViewController {
         siguienteVista.varEval12 = eval12.text!
         siguienteVista.varEval13 = eval13.text!
         self.navigationController?.pushViewController(siguienteVista, animated: true)
+    }
+    
+    
+    @IBAction func agregarEval2(_ sender: Any) {
+        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "RegistroCalificacion") as! RegistroCalificacionController
+        siguienteVista.eval1 = eval2
+        siguienteVista.materiaReg = materiaReg
+        siguienteVista.numEval = "Evaluacion2"
+        siguienteVista.varEval11 = eval21.text!
+        siguienteVista.varEval12 = eval22.text!
+        siguienteVista.varEval13 = eval23.text!
+        self.navigationController?.pushViewController(siguienteVista, animated: true)
+    }
+    
+    
+    @IBAction func agregarEval3(_ sender: Any) {
+         let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "RegistroSencillo") as! RegistroSencilloViewController
+         siguienteVista.varEval = eval3.text!
+        siguienteVista.caliEval = "Calificacion3"
+        
+        
+    }
+    
+    @IBAction func agregarEval4(_ sender: Any) {
+         let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "RegistroSencillo") as! RegistroSencilloViewController
+         siguienteVista.varEval = eval4.text!
+    }
+    
+    
+    @IBAction func agregarEval5(_ sender: Any) {
+         let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "RegistroSencillo") as! RegistroSencilloViewController
+         siguienteVista.varEval = eval5.text!
     }
     /*
     // MARK: - Navigation

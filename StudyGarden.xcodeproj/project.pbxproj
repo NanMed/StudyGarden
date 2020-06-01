@@ -31,6 +31,7 @@
 		A76F0434247632AA005BF7FD /* JuegoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F0433247632AA005BF7FD /* JuegoViewController.swift */; };
 		A76F0437247640D3005BF7FD /* Canvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = A76F0436247640D3005BF7FD /* Canvas.swift */; };
 		A7CD255D246CD57600748D64 /* MateriaRegistradaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CD255C246CD57600748D64 /* MateriaRegistradaViewController.swift */; };
+		A7D56AB024859E2B003DDC29 /* RegistroSencilloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D56AAF24859E2B003DDC29 /* RegistroSencilloViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		A76F0433247632AA005BF7FD /* JuegoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuegoViewController.swift; sourceTree = "<group>"; };
 		A76F0436247640D3005BF7FD /* Canvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canvas.swift; sourceTree = "<group>"; };
 		A7CD255C246CD57600748D64 /* MateriaRegistradaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateriaRegistradaViewController.swift; sourceTree = "<group>"; };
+		A7D56AAF24859E2B003DDC29 /* RegistroSencilloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroSencilloViewController.swift; sourceTree = "<group>"; };
 		F91D7B1CFD1FCA96841B8BB8 /* Pods_StudyGarden.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudyGarden.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 				11BFADCD247F20FE00DCF889 /* PonderacionRegistro.swift */,
 				11BFADD1247F723100DCF889 /* ResultadoRegistroMateria.swift */,
 				11BFADD52481D34C00DCF889 /* RegistroCalificacionController.swift */,
+				A7D56AAF24859E2B003DDC29 /* RegistroSencilloViewController.swift */,
 			);
 			path = StudyGarden;
 			sourceTree = "<group>";
@@ -283,6 +286,7 @@
 				9B162AA9246CA0F80069D3C0 /* treeMarkersController.swift in Sources */,
 				A7CD255D246CD57600748D64 /* MateriaRegistradaViewController.swift in Sources */,
 				11BFADD62481D34C00DCF889 /* RegistroCalificacionController.swift in Sources */,
+				A7D56AB024859E2B003DDC29 /* RegistroSencilloViewController.swift in Sources */,
 				11BFADCE247F20FE00DCF889 /* PonderacionRegistro.swift in Sources */,
 				A74A2E9E2477AB93004EA57F /* Line.swift in Sources */,
 				9B162AA7246C52610069D3C0 /* mapViewController.swift in Sources */,
