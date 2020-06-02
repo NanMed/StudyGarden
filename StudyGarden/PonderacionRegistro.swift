@@ -107,13 +107,13 @@ class PonderacionRegistro: UIViewController {
         self.present(alert, animated: true)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-        let siguienteVista = segue.destination as! ResultadoRegistroMateria
+    
+    @IBAction func pantallaVer(_ sender: Any) {
+        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Ver") as! ResultadoRegistroMateria
         siguienteVista.materiaReg = materia
         siguienteVista.eval1 = eval1.text!
         siguienteVista.eval2 = eval2.text!
+        self.navigationController?.pushViewController(siguienteVista, animated: true)
     }
     
 }

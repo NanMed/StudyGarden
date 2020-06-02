@@ -13,7 +13,9 @@ import FirebaseDatabase
 class RegistroCalificacionController: UIViewController {
 
     //Varibales que recibo del otro view controller
+    var evalReg:String = ""
     var eval1:String = ""
+    var eval2:String = ""
     var materiaReg:String = ""
     var numEval:String = ""
     var numMateria:String = ""
@@ -56,7 +58,7 @@ class RegistroCalificacionController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        labelEval1.text = eval1
+        labelEval1.text = evalReg
     }
     
     @IBAction func registrarCalis(_ sender: Any) {
@@ -146,6 +148,15 @@ class RegistroCalificacionController: UIViewController {
         }
          let totalEval1:String = self.totalPuntos.text!
         ref.child("Usuarios/"+userid!).child(numMateria).child(numEval).updateChildValues(["TotalEval": totalEval1])
+    }
+    
+    
+    @IBAction func pantallaVer(_ sender: Any) {
+        let siguienteVista = self.storyboard?.instantiateViewController(withIdentifier: "Ver") as! ResultadoRegistroMateria
+        siguienteVista.materiaReg = materiaReg
+        siguienteVista.eval1 = eval1
+        siguienteVista.eval2 = eval2
+        self.navigationController?.pushViewController(siguienteVista, animated: true)
     }
     /*
     // MARK: - Navigation
