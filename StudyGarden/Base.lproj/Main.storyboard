@@ -616,10 +616,17 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resultado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYy-Jw-qqc">
-                                <rect key="frame" x="52" y="786" width="311" height="21"/>
+                                <rect key="frame" x="52" y="773" width="311" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Consejo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCb-00-QO0">
+                                <rect key="frame" x="52" y="802" width="311" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -629,6 +636,7 @@
                     <navigationItem key="navigationItem" id="hH3-y3-ycp"/>
                     <connections>
                         <outlet property="botonCamara" destination="yGT-bM-el0" id="AJa-y8-yEg"/>
+                        <outlet property="consejo" destination="dCb-00-QO0" id="QfM-iS-DDM"/>
                         <outlet property="fotoVista" destination="fZk-lk-zyE" id="VzW-aq-TtB"/>
                         <outlet property="resultadoML" destination="KYy-Jw-qqc" id="rFS-V9-bzd"/>
                     </connections>
@@ -636,7 +644,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mDg-c7-cYL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Ggg-rE-pob" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3538" y="2014"/>
+            <point key="canvasLocation" x="3537.68115942029" y="2013.6160714285713"/>
         </scene>
         <!--About-->
         <scene sceneID="eNj-f5-XB4">

@@ -15,6 +15,7 @@ class ExploraObjetosViewController: UIViewController, UIImagePickerControllerDel
     @IBOutlet weak var fotoVista: UIImageView!
     @IBOutlet weak var botonCamara: UIButton!
     @IBOutlet weak var resultadoML: UILabel!
+    @IBOutlet weak var consejo: UILabel!
     
     private let miPicker = UIImagePickerController()
     
@@ -28,6 +29,8 @@ class ExploraObjetosViewController: UIViewController, UIImagePickerControllerDel
             botonCamara.alpha = 0.5
         }
         miPicker.delegate = self
+        resultadoML.isHidden = true
+        consejo.isHidden = true
     }
     
     @IBAction func camara(_ sender: Any) {
@@ -55,7 +58,8 @@ class ExploraObjetosViewController: UIViewController, UIImagePickerControllerDel
     }
     
     @IBAction func ejecML(_ sender: Any) {
-        //print("aqui")
+        resultadoML.isHidden = false
+        consejo.isHidden = false
         //instanciar el modelo de la red neuronal
         let modelFile = ProyectoSG()
         let model = try! VNCoreMLModel(for: modelFile.model)
@@ -77,8 +81,8 @@ class ExploraObjetosViewController: UIViewController, UIImagePickerControllerDel
         var bestConfidence: VNConfidence = 0
         //recorrer todas las respuestas en búsqueda del mejor resultado
         for classification in results{
-            print(classification.confidence)
-            print(classification.identifier)
+            //print(classification.confidence)
+            //print(classification.identifier)
             if (classification.confidence > bestConfidence){
                 bestConfidence = classification.confidence
                 bestPrediction = classification.identifier
@@ -87,5 +91,27 @@ class ExploraObjetosViewController: UIViewController, UIImagePickerControllerDel
         let resultado = bestPrediction
         //print(resultado)
         resultadoML.text = resultado
+        
+        if(resultado.elementsEqual("Basura")){
+            consejo.text = "Tirar la basura regularmente es un buen hábito"
+        } else if(resultado.elementsEqual("Cables")){
+            consejo.text = "No tener cables enredados ayuda a que no se rompan"
+        } else if(resultado.elementsEqual("Cigarros")){
+            consejo.text = "Genera una mala reputación personal"
+        } else if(resultado.elementsEqual("Dinero")){
+            consejo.text = "No olvides guardar tus objetos valiosos"
+        } else if(resultado.elementsEqual("Maquillaje")){
+            consejo.text = "Siempre guarda tu maquillaje en el bolso"
+        } else if(resultado.elementsEqual("Mochila")){
+            consejo.text = "Coloca tu mochila en un espacio designado"
+        } else if(resultado.elementsEqual("Nota adhesiva")){
+            consejo.text = "Ayuda a la organización personal"
+        } else if(resultado.elementsEqual("Plato")){
+            consejo.text = "No tengas platos en tu espacio"
+        } else if(resultado.elementsEqual("Producto higiene")){
+            consejo.text = "Siempre guarda tus productos de higiene"
+        } else if(resultado.elementsEqual("Taza")){
+            consejo.text = "Recuerda siempre lavar tu taza después de usarla"
+        }
     }
 }
