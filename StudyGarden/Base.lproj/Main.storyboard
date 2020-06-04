@@ -282,6 +282,14 @@
                                 <color key="textColor" red="1" green="0.31018814672848871" blue="0.36925553527228361" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaV-V0-SFc">
+                                <rect key="frame" x="294" y="110" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cerrar sesion"/>
+                                <connections>
+                                    <action selector="logOut:" destination="VvD-fJ-MCE" eventType="touchUpInside" id="nSs-mi-9lz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Elo-Zh-YiN"/>
@@ -400,6 +408,14 @@
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="iniciar:" destination="kHz-Fv-EgC" eventType="touchUpInside" id="b12-vs-CKn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udg-zk-CU8">
+                                <rect key="frame" x="289" y="83" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cerrar sesion"/>
+                                <connections>
+                                    <action selector="cerrarSesion:" destination="kHz-Fv-EgC" eventType="touchUpInside" id="qlj-Ng-q9f"/>
                                 </connections>
                             </button>
                         </subviews>

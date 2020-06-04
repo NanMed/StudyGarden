@@ -20,6 +20,8 @@ class LogIn: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+
+    
     @IBAction func iniciar(_ sender: UIButton) {
         print("Hola")
         Auth.auth().signIn(withEmail: correo.text!, password: password.text!){

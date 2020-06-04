@@ -21,6 +21,20 @@ class ResgistrarUsuario: UIViewController {
         mensajeError.isHidden = true
     }
     
+    
+    @IBAction func logOut(_ sender: Any) {
+        
+        let firebaseAuth = Auth.auth()
+        do {
+          try firebaseAuth.signOut()
+            let alert = UIAlertController(title: "Cerrar Sesion", message: "Has salido de la sesion", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true)
+        } catch let signOutError as NSError {
+          print ("Error signing out: %@", signOutError)
+        }
+    }
+    
     @IBAction func logIn(_ sender: Any) {
         Auth.auth().signIn(withEmail: correoText.text!, password: passText.text!){
             (user, error) in
