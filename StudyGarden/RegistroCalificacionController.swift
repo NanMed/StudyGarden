@@ -59,6 +59,15 @@ class RegistroCalificacionController: UIViewController {
 
         // Do any additional setup after loading the view.
         labelEval1.text = evalReg
+        promedio1.isHidden = true
+        promedio2.isHidden = true
+        promedio3.isHidden = true
+        ponderacion1.isHidden = true
+        ponderacion2.isHidden = true
+        ponderacion3.isHidden = true
+        puntos1.isHidden = true
+        puntos2.isHidden = true
+        puntos3.isHidden = true
     }
     
     @IBAction func registrarCalis(_ sender: Any) {
@@ -92,6 +101,12 @@ class RegistroCalificacionController: UIViewController {
     }
     
     @IBAction func cargarInfo(_ sender: Any) {
+        promedio1.isHidden = false
+        promedio2.isHidden = false
+        promedio3.isHidden = false
+        ponderacion1.isHidden = false
+        ponderacion2.isHidden = false
+        ponderacion3.isHidden = false
         let userid = Auth.auth().currentUser?.uid
         if(materiaReg.elementsEqual("AMMS")){
             numMateria = "Materia1"
@@ -125,6 +140,9 @@ class RegistroCalificacionController: UIViewController {
     
     
     @IBAction func verResultados(_ sender: Any) {
+        puntos1.isHidden = false
+        puntos2.isHidden = false
+        puntos3.isHidden = false
         let ac1 = Float(prom1 * (ponder1/100))
         let ac2 = Float(prom2 * (ponder2/100))
         let ac3 = Float(prom3 * (ponder3/100))
@@ -148,6 +166,12 @@ class RegistroCalificacionController: UIViewController {
         }
          let totalEval1:String = self.totalPuntos.text!
         ref.child("Usuarios/"+userid!).child(numMateria).child(numEval).updateChildValues(["TotalEval": totalEval1])
+        //Notificar al usuario que la actualización fue exitosa
+        let alert = UIAlertController(title: "Calificación registrada", message: "Los datos se almacenaron exitosamente", preferredStyle: .alert)
+                
+        alert.addAction(UIAlertAction(title: "Continuar", style: .default, handler: nil))
+                
+        self.present(alert, animated: true)
     }
     
     

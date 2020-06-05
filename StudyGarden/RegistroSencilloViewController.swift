@@ -54,6 +54,13 @@ class RegistroSencilloViewController: UIViewController {
             ref.child("Usuarios/"+userid!).child(numMateria).updateChildValues(["Calificacion5": calEval])
         }
         
+        //Notificar al usuario que la actualización fue exitosa
+        let alert = UIAlertController(title: "Calificación registrada", message: "Los datos se almacenaron exitosamente", preferredStyle: .alert)
+                
+        alert.addAction(UIAlertAction(title: "Continuar", style: .default, handler: nil))
+                
+        self.present(alert, animated: true)
+        
     }
     
     @IBAction func pantallaVer(_ sender: Any) {
