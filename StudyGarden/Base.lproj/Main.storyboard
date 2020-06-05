@@ -283,9 +283,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KaV-V0-SFc">
-                                <rect key="frame" x="294" y="110" width="92" height="30"/>
+                                <rect key="frame" x="284" y="102" width="110" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Cerrar sesion"/>
+                                <color key="backgroundColor" red="0.0" green="0.64295202490000003" blue="0.47099572420000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.91588097810000002" green="0.99026900529999995" blue="0.88665693999999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Cerrar sesion">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="logOut:" destination="VvD-fJ-MCE" eventType="touchUpInside" id="nSs-mi-9lz"/>
                                 </connections>
@@ -309,6 +318,7 @@
         <!--Inicio sesion-->
         <scene sceneID="ekg-0o-stz">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o5L-Km-zbS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController title="Inicio sesion" id="kHz-Fv-EgC" customClass="LogIn" customModule="StudyGarden" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IjS-4u-2Ik">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -429,7 +439,6 @@
                         <outlet property="x" destination="HPP-wl-bZ2" id="Wom-zx-pXB"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="o5L-Km-zbS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2081" y="-198"/>
         </scene>
