@@ -89,13 +89,12 @@ class ExploraObjetosViewController: UIViewController, UIImagePickerControllerDel
             }
         }
         let resultado = bestPrediction
-        //print(resultado)
         resultadoML.text = resultado
         
         if(resultado.elementsEqual("Basura")){
             consejo.text = "Tirar la basura regularmente es un buen hábito"
         } else if(resultado.elementsEqual("Cables")){
-            consejo.text = "No tener cables enredados ayuda a que no se rompan"
+            consejo.text = "Ten tus cables organizados para no romperlos"
         } else if(resultado.elementsEqual("Cigarros")){
             consejo.text = "Genera una mala reputación personal"
         } else if(resultado.elementsEqual("Dinero")){
@@ -111,7 +110,7 @@ class ExploraObjetosViewController: UIViewController, UIImagePickerControllerDel
         } else if(resultado.elementsEqual("Producto higiene")){
             consejo.text = "Siempre guarda tus productos de higiene"
         } else if(resultado.elementsEqual("Taza")){
-            consejo.text = "Recuerda siempre lavar tu taza después de usarla"
+            consejo.text = "Siempre lavar tu taza después de usarla"
         }
     }
 }

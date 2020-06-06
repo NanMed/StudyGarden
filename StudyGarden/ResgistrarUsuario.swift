@@ -49,7 +49,6 @@ class ResgistrarUsuario: UIViewController {
                 //self.present(alert, animated: true)
             }else{
                 self.mensajeError.isHidden = true
-                print("Login exitoso")
                 self.performSegue(withIdentifier: "goLogIn", sender: self)
                
             }

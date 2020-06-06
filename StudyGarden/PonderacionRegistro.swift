@@ -58,7 +58,7 @@ class PonderacionRegistro: UIViewController {
          //Obtener el texto introducido por el usuario
          //Hace falta verificar que el texto no sea nulo
         let materiaRegistro:String = self.materiaLabel.text!
-        print(materiaRegistro)
+
         if(materiaRegistro.elementsEqual("AMMS")){
             regMateria = "Materia1"
         } else if (materiaRegistro.elementsEqual("Bases de Datos")){
