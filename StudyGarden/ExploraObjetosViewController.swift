@@ -9,6 +9,7 @@
 import UIKit
 import CoreML
 import Vision
+import Firebase
 
 class ExploraObjetosViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate{
 
@@ -19,9 +20,11 @@ class ExploraObjetosViewController: UIViewController, UIImagePickerControllerDel
     
     private let miPicker = UIImagePickerController()
     
+    var dbF:Firestore!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        dbF = Firestore.firestore()
         // Do any additional setup after loading the view.
         if !UIImagePickerController.isSourceTypeAvailable(.camera){
             //Desactiva el boton de la camara si no hay camara
@@ -59,7 +62,6 @@ class ExploraObjetosViewController: UIViewController, UIImagePickerControllerDel
     
     @IBAction func ejecML(_ sender: Any) {
         resultadoML.isHidden = false
-        consejo.isHidden = false
         //instanciar el modelo de la red neuronal
         let modelFile = ProyectoSG()
         let model = try! VNCoreMLModel(for: modelFile.model)
@@ -69,13 +71,12 @@ class ExploraObjetosViewController: UIViewController, UIImagePickerControllerDel
         let handler = VNImageRequestHandler(ciImage: imagenCI!)
         //Crear una solicitud al modelo para el análisis de la imagen
         let request = VNCoreMLRequest(model: model, completionHandler: resultadosModelo)
-        //print("aqui ya no")
         try! handler.perform([request])
     }
     
     func resultadosModelo(request: VNRequest, error: Error?)
     {
-        //print("aqui si")
+       
         guard let results = request.results as? [VNClassificationObservation] else { fatalError("No hubo respuesta del modelo ML")}
         var bestPrediction = ""
         var bestConfidence: VNConfidence = 0
@@ -90,27 +91,19 @@ class ExploraObjetosViewController: UIViewController, UIImagePickerControllerDel
         }
         let resultado = bestPrediction
         resultadoML.text = resultado
-        
-        if(resultado.elementsEqual("Basura")){
-            consejo.text = "Tirar la basura regularmente es un buen hábito"
-        } else if(resultado.elementsEqual("Cables")){
-            consejo.text = "Ten tus cables organizados para no romperlos"
-        } else if(resultado.elementsEqual("Cigarros")){
-            consejo.text = "Genera una mala reputación personal"
-        } else if(resultado.elementsEqual("Dinero")){
-            consejo.text = "No olvides guardar tus objetos valiosos"
-        } else if(resultado.elementsEqual("Maquillaje")){
-            consejo.text = "Siempre guarda tu maquillaje en el bolso"
-        } else if(resultado.elementsEqual("Mochila")){
-            consejo.text = "Coloca tu mochila en un espacio designado"
-        } else if(resultado.elementsEqual("Nota adhesiva")){
-            consejo.text = "Ayuda a la organización personal"
-        } else if(resultado.elementsEqual("Plato")){
-            consejo.text = "No tengas platos en tu espacio"
-        } else if(resultado.elementsEqual("Producto higiene")){
-            consejo.text = "Siempre guarda tus productos de higiene"
-        } else if(resultado.elementsEqual("Taza")){
-            consejo.text = "Siempre lavar tu taza después de usarla"
+    }
+    
+    @IBAction func consejo(_ sender: Any) {
+        consejo.isHidden = false
+        let ref = dbF.collection("objetos").document(resultadoML.text!)
+        ref.getDocument { (snapshot, err) in
+            if let data = snapshot?.data() {
+                let consejoTexto = data["Consejo"]! as? String
+                self.consejo.text = consejoTexto
+            } else {
+                print("No se encontro el documento")
+            }
         }
     }
+    
 }
