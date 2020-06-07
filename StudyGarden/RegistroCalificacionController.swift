@@ -25,6 +25,7 @@ class RegistroCalificacionController: UIViewController {
     
     //Variables para sacar los puntos obtenidos por la evcaluacion
     var ponder1:Float = -1.0
+   
     var ponder2:Float = -1.0
     var ponder3:Float = -1.0
     var prom1:Float = -1.0
@@ -129,9 +130,12 @@ class RegistroCalificacionController: UIViewController {
             self.ponderacion2.text = datos?["Ponde2"] as? String
             self.ponderacion3.text = datos?["Ponde3"] as? String
             
+            
             self.ponder1 = Float(self.ponderacion1.text!)!
             self.ponder2 = Float(self.ponderacion2.text!)!
             self.ponder3 = Float(self.ponderacion3.text!)!
+            
+            
             self.prom1 = Float(self.promedio1.text!) ?? 0.0
             self.prom2 = Float(self.promedio2.text!) ?? 0.0
             self.prom3 = Float(self.promedio3.text!) ?? 0.0

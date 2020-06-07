@@ -204,8 +204,8 @@ class ResultadoRegistroMateria: UIViewController {
     }
     
     @IBAction func calcularPromedio(_ sender: Any) {
-        let ac1 = Float(totalEval1 * (ponder1/100))
-        let ac2 = Float(totalEval2 * (ponder2/100))
+        let ac1 = Float(totalEval1)
+        let ac2 = Float(totalEval2 )
         let ac3 = Float(totalEval3 * (ponder3/100))
         let ac4 = Float(totalEval4 * (ponder4/100))
         let ac5 = Float(totalEval5 * (ponder5/100))
